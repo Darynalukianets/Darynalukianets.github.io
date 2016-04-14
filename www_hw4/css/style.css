@@ -1,0 +1,233 @@
+* {
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
+
+li {
+  text-align: center;
+}
+
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+body {
+  background: url(../img/background_.png) repeat-x #0c75a0;
+}
+
+.wrapper {
+  width: 1000px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 4px 6px 0px rgba(55, 55, 55, 1);
+}
+
+.header-left {
+  margin-bottom: -3px;
+  color: #128aa7;
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
+
+.logo-picture {
+  display: inline-block;
+  margin: 11px 0 -2px 28px;
+}
+
+.header-right {
+  float: right;
+  width: 340px;
+  height: 100%; /* обозначение высоты таким образом предлагалось в скинкасте.
+  Не уверена - необходим этот парметр, или он лишний */
+  margin-right: 30px;
+}
+
+.contacts {
+  padding-top: 5px;
+  float: right;
+  font-size: 12px;
+}
+
+.contacts p {
+  margin: 5px;
+}
+
+.contacts .contacts-h {
+  margin-bottom: 7px;
+}
+
+.countries {
+  float: right;
+  padding-top: 33px;
+}
+
+.countries .links li {
+  float: left;
+  display: inline-block;
+  width: 54px;
+  margin: 0 1px 0 1px;
+}
+
+.lang {
+  display: block;
+  text-align: center;
+  color: #128aa7;
+  font-size: 10px;
+}
+.lang:before {
+  height: 42px;
+  width: 48px;
+  content: '';
+  display: block;
+  background: url("../img/flags.png") no-repeat 0 0;
+}
+
+.lang.india:before {
+  background-position: 2px -50px;
+}
+
+.lang.nepal:before {
+  background-position: -43px -3px;
+}
+
+.lang.tibet:before {
+  background-position: 4px -3px;
+}
+
+.lang.bhutan:before {
+  background-position: -44px -50px;
+}
+
+.lang.sri-lanka:before {
+  background-position: -93px -50px;
+}
+
+.lang.maldives:before {
+  background-position: -92px -3px;
+}
+
+.container-menu {
+  margin-top: 1px;
+  border-top: 1px solid #cacbcb;
+  border-bottom: 1px solid #000000;
+  background: linear-gradient(to bottom, rgba(55, 55, 55, 1) 0%, rgba(48, 48, 48, 1) 100%);
+  box-shadow: 0px 4px 4px 0px rgba(55, 55, 55, 1);
+  z-index: 1;
+  position: relative;
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+}
+
+ul {
+  display: block;
+}
+
+ul:after {
+  display: block;
+  content: ' ';
+  clear: both;
+  float: none;
+}
+
+.menu .symbol {
+  font-size: 7px;
+  vertical-align: middle;
+}
+
+ul.menu > li {
+  float: left;
+  position: relative;
+  margin-left: 56px;
+}
+
+ul.menu > li > a {
+  display: block;
+  padding: 6px 0 8px 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+ul.submenu {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 29px;
+  left: 0;
+  background-color: #303030;
+  z-index: 2;
+  box-shadow: 0px 4px 4px 0px rgba(55, 55, 55, 1);
+}
+
+ul.submenu > li {
+  display: block;
+}
+
+ul.submenu > li > a {
+  display: block;
+  padding: 5px 0 5px 10px;
+  color: white;
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+}
+
+ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+
+.container {
+  height: 540px; /* без задавания высоты в пикселях бэкграунд растягиваться
+  только на высоту контента блока */
+  background-color: white;
+  color: #424c43;
+  text-align: justify;
+  line-height: 23px;
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+  font-size: 14px;
+}
+
+.container .name {
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container .info {
+  width: 171px;
+  height: 100%;
+  float: left;
+  background-color: #edeef0;
+  border-right: 1px solid #c7cacf;
+  padding: 0 24px 0 15px;
+}
+
+.container .content {
+  width: 210px;
+  height: 100%;
+  float: left;
+  padding: 0 15px;
+}
+
+.container .news {
+  width: 171px;
+  height: 100%;
+  float: right;
+  background-color: #edeef0;
+  border-left: 1px solid #c7cacf;
+  padding: 0 24px 0 15px;
+}
+
+.footer {
+  height: 34px;
+  text-align: center;
+  color: white;
+  font-family: Tahoma, Geneva, Kalimati, sans-serif;
+  font-size: 12px;
+}
+
+.footer p {
+  padding: 10px;
+}
