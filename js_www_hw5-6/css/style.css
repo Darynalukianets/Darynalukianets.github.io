@@ -1,0 +1,13 @@
+div {
+  text-align: center;
+  font-weight: bold;
+}
+.timer {
+  margin: 300px 0 30px 0;
+  font-size: 150px;
+  font-family: monospace;
+}
+
+button {
+  width: 10%;
+}
