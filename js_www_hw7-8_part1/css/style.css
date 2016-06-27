@@ -1,0 +1,61 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+  border: 2px solid #a1b2dd;
+  border-radius: 7px;
+  font-family: sans-serif;
+  color: #2c304d;
+  font-size: 14px;
+}
+
+.tabs {
+  height: 60px;
+  margin: 3px 3px 0 3px;
+  background: linear-gradient(to bottom, #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%);
+  border: 1px solid #a1b2dd;
+  border-radius: 7px;
+}
+
+h6 {
+  display: inline-block;
+  margin: 9px 0 0 5px;
+  height: 50px;
+  width: 100px;
+  background: linear-gradient(to bottom, #eaf4fa 0%,#d3e1f1 50%,#cbdfef 51%,#c2dfec 100%);
+  border: 1px solid #a1b2dd;
+  border-radius: 7px 7px 0 0;
+  text-align: center;
+  line-height: 57px;
+}
+
+h6:hover {
+  background: linear-gradient(to bottom, #bad9ee 0%,#a7c4e3 50%,#9fc3e1 51%,#96c8e0 100%);
+  border-top: 1px solid #6084d5;
+  border-right: 1px solid #6084d5;
+  border-left: 1px solid #6084d5;
+}
+
+.active, .active:hover {
+  background: linear-gradient(to bottom, #e9f6fb 0%,#f7fcfd 69%,#ffffff 100%);
+  border-top: 1px solid #a1b2dd;
+  border-right: 1px solid #a1b2dd;
+  border-left: 1px solid #a1b2dd;
+  border-bottom: 1px solid white;
+}
+
+.content {
+  padding: 13px;
+  line-height: 18px;
+}
+
+.content > div {
+  display: none;
+}
+
+.content > .visible {
+  display: block;
+}
+
+p {
+  margin: 10px 0;
+}
