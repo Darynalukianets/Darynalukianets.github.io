@@ -4,8 +4,8 @@ $(function() {
   var html = $('#tmpl-searh-result').html();
   var searchResults = [];
 
-  $(":submit").click(function(event){
-    event.preventDefault();
+  $(":submit").click(function(e){
+    e.preventDefault();
     var inputValue = $(":text").val();
     $('.results-wrapper').remove();
 
