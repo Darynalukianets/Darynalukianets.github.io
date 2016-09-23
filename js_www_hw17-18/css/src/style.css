@@ -1,0 +1,239 @@
+body {
+  background: #9c8c8c;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.jcarousel-wrapper {
+  margin: 20px auto;
+  position: relative;
+  width: 510px;
+  height: 500px;
+  border: 10px solid #c6bdbd;
+  border-radius: 5px;
+}
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+.jcarousel-prev, .jcarousel-next {
+  position: absolute;
+  top: 230px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #423e3e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.jcarousel-prev {
+  left: -50px;
+}
+
+.jcarousel-next {
+  right: -50px;
+}
+
+.jcarousel-pagination {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+
+.jcarousel-pagination a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 14px;
+  min-width: 14px;
+  background: #fff;
+  color: #4E443C;
+  border-radius: 14px;
+  padding: 3px;
+  text-align: center;
+  margin-right: 2px;
+  opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+  background: #4E443C;
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+.select-wrapper {
+  margin: 5px auto;
+  position: relative;
+  width: 104px;
+}
+
+.imputs-wrapper {
+  margin: 5px auto;
+  position: relative;
+  width: 105px;
+}
+
+.niceCheck {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  margin-left: 34px;
+  cursor: pointer;
+  background: url(../img/checkbox.png);
+  overflow: hidden;
+}
+
+.niceChecked {
+  background-position: 18px -17px;
+}
+
+ .niceCheck input {
+  margin-left: -20px;
+}
+
+.niceCheckDisabled {
+  background-image: url(../img/checkbox-disabled.png);
+}
+
+label {
+  font-size: 11px;
+  color: #392d28;
+  line-height: 23px;
+}
+
+.imput-js label {
+  position: absolute;
+  background-color: #9c8c8c;
+  line-height: 23px;
+}
+
+.imput-css input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.imput-css label {
+	cursor: pointer;
+}
+
+.imput-css label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 9px;
+}
+
+.imput-css input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+
+.imput-css label:hover:after {
+background-position: 0 -34px;
+}
+
+.imput-css input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}
+
+nav {
+  width: 650px;
+  margin: 0 auto;
+  padding: 10px 210px;
+  background: linear-gradient(to bottom, rgba(194,178,180,1) 0%,rgba(133,115,117,1) 50%,rgba(116,100,102,1) 51%,rgba(181,165,167,1) 100%);
+  border-radius: 5px;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+}
+
+/*sub navigation*/
+nav li ul {
+  position: absolute;
+  left: 0;
+  top: 40px; /* make this equal to the line-height of the links (specified below) */
+  width: 200px;
+  border-radius: 5px;
+}
+
+nav li li {
+  position: relative;
+  display: block;
+}
+
+nav li li ul {
+  position: absolute;
+  top: 0;
+
+  left: 200px;/* make this equal to the width of the sub nav above */
+}
+
+nav a {
+  line-height: 40px;
+  padding: 0 30px;
+  margin: 0 12px;
+  color: #ebe0db;
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover, nav a:focus, nav a:active {
+  color: #de9cb7;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 1);
+
+}
+
+nav li li a {
+  border-bottom: 1px solid #3b3936;
+  margin: 0 10px;
+}
+
+nav li li:last-child a {
+  border-bottom: none;
+}
+
+nav li.dropdown > a {
+  background-image: url(../img/arrow-down.png);
+  background-position: right 18px;
+  background-repeat: no-repeat;
+}
+
+nav li li.dropdown > a {
+  background-image: url(../img/arrow-right.png);
+  background-position: right 9px;
+  background-repeat: no-repeat;
+}
+
+ul .sub-menu {
+  display: none;
+  background-color: #6a6766;
+}
