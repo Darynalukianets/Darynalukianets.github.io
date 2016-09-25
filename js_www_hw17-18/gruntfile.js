@@ -16,17 +16,6 @@ module.exports = function(grunt) {
         dest: 'js/dist/script.main.min.js'
       }
     },
-    // cssmin: {
-    //   target: {
-    //     files: [{
-    //       expand: true,
-    //       cwd: 'css',
-    //       src: ['*.css', '!*.min.css'],
-    //       dest: 'css',
-    //       ext: '.min.css'
-    //     }]
-    //   }
-    // }
     cssmin: {
       options: {
         shorthandCompacting: false,

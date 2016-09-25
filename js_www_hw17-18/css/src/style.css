@@ -102,7 +102,7 @@ body {
   display: inline-block;
   margin-left: 34px;
   cursor: pointer;
-  background: url(../img/checkbox.png);
+  background: url(../../img/checkbox.png);
   overflow: hidden;
 }
 
@@ -115,7 +115,7 @@ body {
 }
 
 .niceCheckDisabled {
-  background-image: url(../img/checkbox-disabled.png);
+  background-image: url(../../img/checkbox-disabled.png);
 }
 
 label {
@@ -144,7 +144,7 @@ label {
 	display: inline-block;
 	width: 17px;
 	height: 17px;
-	background: url(../img/checkbox-2.png);
+	background: url(../../img/checkbox-2.png);
 	position: relative;
 	top: 3px;
 	margin-left: 9px;
@@ -222,13 +222,13 @@ nav li li:last-child a {
 }
 
 nav li.dropdown > a {
-  background-image: url(../img/arrow-down.png);
+  background-image: url(../../img/arrow-down.png);
   background-position: right 18px;
   background-repeat: no-repeat;
 }
 
 nav li li.dropdown > a {
-  background-image: url(../img/arrow-right.png);
+  background-image: url(../../img/arrow-right.png);
   background-position: right 9px;
   background-repeat: no-repeat;
 }
