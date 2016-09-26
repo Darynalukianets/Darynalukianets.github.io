@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TechSkills_JS_HW17-18_opt(gulp)</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- alternative select style -->
+    <!-- <link rel="stylesheet" href="css/customselect.css"> -->
+    <link rel="stylesheet" href="css/heapbox.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src='js/jquery.jcarousel.js'></script>
+    <!-- alternative select style -->
+    <!-- <script src='js/customSelect.jquery.js'></script> -->
+    <script src='js/jquery.heapbox-0.9.4.js'></script>
+    <script src='js/jquery.color.js'></script>
+    <script src='js/script.js'></script>
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="dropdown">
+          <a href="#">Nav 3</a>
+          <ul class="sub-menu">
+            <li><a href="#">Nav 3.1</a></li>
+            <li><a href="#">Nav 3.2</a></li>
+            <li><a href="#">Nav 3.3</a></li>
+            <li class="dropdown">
+              <a href="#">Nav 3.4</a>
+              <ul class="sub-menu">
+                <li><a href="#">Nav 3.4.1</a></li>
+                <li class="dropdown">
+                  <a href="#">Nav 3.4.2</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Nav 3.4.2.1</a></li>
+                    <li><a href="#">Nav 3.4.2.2</a></li>
+                    <li><a href="#">Nav 3.4.2.3</a></li>
+                    <li><a href="#">Nav 3.4.2.4</a></li>
+                    <li><a href="#">Nav 3.4.2.5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Nav 3.4.3</a></li>
+                <li><a href="#">Nav 3.4.4</a></li>
+                <li><a href="#">Nav 3.4.5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Nav 3.5</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Nav 4</a></li>
+        <li><a href="#">Nav 5</a></li>
+      </ul>
+    </nav>
+    <div class="jcarousel-wrapper">
+      <div class="jcarousel">
+        <ul>
+          <li><img src="img/img_1.jpg"/></li>
+          <li><img src="img/img_2.jpg"/></li>
+          <li><img src="img/img_3.jpg"/></li>
+          <li><img src="img/img_4.jpg"/></li>
+        </ul>
+      </div>
+      <a href="#" class="jcarousel-prev">&lsaquo;</a>
+      <a href="#" class="jcarousel-next">&rsaquo;</a>
+      <div class="jcarousel-pagination"></div>
+    </div>
+
+    <div class="select-wrapper">
+      <form action="index.html" method="post">
+        <select id="styledSelect" name="">
+          <option value="Option1">Option1</option>
+          <option value="Option2">Option2</option>
+          <option value="Option3">Option3</option>
+          <option value="Option4">Option4</option>
+          <option value="Option5">Option5</option>
+          <option value="Option6">Option6</option>
+          <option value="Option7">Option7</option>
+        </select>
+      </form>
+    </div>
+    <div class="imputs-wrapper">
+      <form action="index.html" method="post">
+        <div class="imput-js">
+          <div>
+            <label for="ch1">js-checkbox 1</label>
+            <input type="checkbox" class="niceCheck" id="ch1" tabindex="1" />
+          </div>
+          <div >
+            <label for="ch2">js-checkbox 2</label>
+            <input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+          </div>
+          <div>
+            <label for="ch3">js-checkbox 3</label>
+            <input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" />
+          </div>
+        </div>
+        <div class="imput-css">
+          <input type="checkbox" id="test-check1">
+          <label for="test-check1">css-checkbox 1</label>
+          <input type="checkbox" id="test-check2">
+          <label for="test-check2">css-checkbox 2</label>
+          <input type="checkbox" id="test-check3">
+          <label for="test-check3">css-checkbox 3</label>
+        </div>
+      </form>
+    </div>
+
+  </body>
+  </html>
