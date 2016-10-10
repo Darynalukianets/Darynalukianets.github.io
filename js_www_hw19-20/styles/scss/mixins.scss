@@ -1,0 +1,41 @@
+@mixin clearfix {
+  display: block;
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+@mixin header {
+  font-family: $font;
+  color: $dark;
+  font-weight: bold;
+}
+
+@mixin content {
+  font-size: 13px;
+  font-family: "Arial";
+  color: #8a8a8a;
+  line-height: 20px;
+}
+
+@mixin accordion-header {
+  font-family: $font;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+@mixin blue-hover {
+  color: $blue;
+  cursor: pointer;
+}
+
+@mixin yellow-hover {
+  color: $yellow;
+  cursor: pointer;
+}
