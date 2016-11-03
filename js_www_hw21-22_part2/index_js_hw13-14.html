@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>js_hw21-22_part2</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.js"></script>
+  </head>
+<body>
+
+  <script type="text/template" id="tmpl-test">
+    <div class="test-wrapper">
+      <h3><%-title%></h3>
+      <form>
+        <% for (var i = 0; i < testContent.questions.length; i++) { %>
+          <h4><%=testContent.questions[i].question%></h4>
+          <ul><% for (var y = 0; y < testContent.questions[i].ansvers.length; y++) { %>
+            <li><input type="checkbox"><%-testContent.questions[i].ansvers[y].text%></li>
+          <% } %>
+          </ul>
+        <% } %>
+        <button type="button" name="button" id="check-button"><%-check%></button>
+      <form>
+    </div>
+    <div class="modal-window" id="modal">
+      <span class="close" id="close">x</span>
+      <div id="modal-content"></div>
+    </div>
+    <div id="overlay"></div>
+  </script>
+
+  <script src="js/dist/script.js"></script>
+
+</body>
