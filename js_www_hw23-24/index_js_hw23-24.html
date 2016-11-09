@@ -1,0 +1,37 @@
+<!DOCTYPE <html></html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TechSkills_JS_HW19-20</title>
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script data-main="js/app" src="js/require.js"></script>
+  </head>
+  <body>
+
+    <script type="text/template" id="wrapper-template">
+      <div class="wrapper">
+        <header>To Do List</header>
+        <ul class="item-list"></ul>
+        <div class="controlls">
+          <input type="text" class="new-item-value" maxlength="66" placeholder="Add new task!">
+          <button class="item-add">Add</button>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="list-template">
+     <% for (var i = 0; i < data.length; i++) { %>
+       <li data-value="<%= data[i] %>" class="item" title="Click twice to edit"> <%= data[i] %>
+         <input type="text" value=" <%= data[i] %> " class="item-value" maxlength="66">
+         <button class="item-save">Save</button>
+         <button class="item-cancel-edit">Cancel</button>
+         <span data-value="<%= data[i] %>" class="item-delete"></span>
+       </li>
+     <% }; %>
+    </script>
+
+  </body>
+  </html>

@@ -1,0 +1,85 @@
+body {
+  background-color: #c7e2bc;
+  font-family: 'Trirong', sans-serif;
+}
+
+.wrapper {
+  display: block;
+  width: 662px;
+  margin: auto;
+  background-color: #d7e9c9;
+  border: 2px solid #8a998a;
+  border-radius: 5px;
+}
+
+header {
+  padding: 10px 0 170px 0;
+  background: url(../img/j.png) no-repeat;
+  font-size: 40px;
+  text-align: center;
+  color: #0d4e2d;
+  font-weight: bold;
+}
+
+ul {
+  margin: 10px 10px 10px 30px;
+  color: #382525;
+}
+
+li {
+  line-height: 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/delete_button.png) no-repeat;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.controlls {
+  width: 50%;
+  margin: auto;
+  padding: 80px 0 10px 0;
+}
+
+.new-item-value {
+  width: 80%;
+  font-family: 'Trirong', sans-serif;
+  border-radius: 5px;
+  background-color:  #f1ead5;
+  border: 1px solid #8a998a;
+  color: #67524a;
+}
+
+.item-add {
+  width: 15%;
+}
+
+.item-value, .item-save, .item-cancel-edit {
+  display: none;
+  line-height: 13px;
+}
+
+.item-value {
+  padding: 0;
+  vertical-align: middle;
+  font-size: 12px;
+  background-color: #f1ead5;
+  font-family: 'Trirong', sans-serif;
+  border: 1px solid #8a998a;
+  color: #67524a;
+  border-radius: 2px;
+}
+
+.item-add, .item-save, .item-cancel-edit {
+  font-family: 'Trirong', sans-serif;
+  background: linear-gradient(to bottom, #d3ddb8 0%,#9cb58b 44%,#7cad79 100%);
+  border-radius: 5px;
+  border: 1px solid #8a998a;
+  color: #382525;
+}
