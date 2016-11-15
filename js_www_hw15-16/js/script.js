@@ -15,7 +15,7 @@ $(function() {
       method: 'GET',
       dataType: 'jsonp',
       success: function() {
-        for (var i = 0; i < arguments[0].hits.length; i++) {
+        for (var i = 0; i < arguments[0].hits.length - 2; i++) {
           searchResults.push(arguments[0].hits[i].webformatURL);
         };
         var content = tmpl(html, {
