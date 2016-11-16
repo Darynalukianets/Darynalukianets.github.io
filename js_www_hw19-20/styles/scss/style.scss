@@ -1,13 +1,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-html {
-  overflow-x: hidden;
-}
-
-body {
-  width: $bodywidth;
-}
+// html {
+//   overflow-x: hidden;
+// }
 
 .wrapper {
   @include clearfix;
@@ -154,7 +150,7 @@ header {
 
   .features__item {
     width: 360px;
-    margin-right: 39px;
+    margin-right: 33px;
     float: left;
     font-family: $font;
 
@@ -201,6 +197,12 @@ header {
     }
   }
 
+  .features__item--align {
+    @extend .features__item;
+    margin-right: 0;
+    float: right;
+  }
+
 }
 
 .services {
@@ -222,7 +224,7 @@ header {
 
 .services__item1 {
   float: left;
-  margin-right: 40px;
+  margin-right: 39px;
   font-size: 16px;
   text-align: center;
 
@@ -268,6 +270,8 @@ header {
 
 .services__item4 {
   @extend .services__item1;
+  float: right;
+  margin-right: 0;
   a {
     background: url(../../../img/services-sprite.png) no-repeat -57px -884px;
   }
@@ -360,7 +364,6 @@ header {
 .accordion-panels {
   width: 560px;
   float: right;
-  margin-right: 80px;
 }
 
 .accordion-panels__header {
@@ -441,17 +444,17 @@ header {
 
 .partners-logo__item1 {
   a {
-    width: 206px;
+    width: 193px;
     height: 58px;
     float: left;
-    background: url(../../../img/partners-logo-sprite.png) no-repeat -9px 1px;
+    background: url(../../../img/partners-logo-sprite.png) no-repeat -11px 1px;
   }
 }
 
 .partners-logo__item2 {
   @extend .partners-logo__item1;
   a {
-    background: url(../../../img/partners-logo-sprite.png) no-repeat -24px -60px;
+    background: url(../../../img/partners-logo-sprite.png) no-repeat -14px -60px;
   }
 
 }
@@ -459,28 +462,28 @@ header {
 .partners-logo__item3 {
   @extend .partners-logo__item1;
   a {
-    background: url(../../../img/partners-logo-sprite.png) no-repeat -4px -124px;
+    background: url(../../../img/partners-logo-sprite.png) no-repeat 20px -124px;
   }
 }
 
 .partners-logo__item4 {
   @extend .partners-logo__item1;
   a {
-    background: url(../../../img/partners-logo-sprite.png) no-repeat 0 -187px;
+    background: url(../../../img/partners-logo-sprite.png) no-repeat 37px -187px;
   }
 }
 
 .partners-logo__item5 {
   @extend .partners-logo__item1;
   a {
-    background: url(../../../img/partners-logo-sprite.png) no-repeat -4px -249px;
+    background: url(../../../img/partners-logo-sprite.png) no-repeat 46px -249px;
   }
 }
 
 .partners-logo__item6 {
   @extend .partners-logo__item1;
   a {
-    background: url(../../../img/partners-logo-sprite.png) no-repeat -31px -313px;
+    background: url(../../../img/partners-logo-sprite.png) no-repeat 32px -313px;
   }
 }
 
@@ -493,7 +496,7 @@ footer {
 .socials {
   width: 260px;
   float: left;
-  margin: 0 38px 71px 0;
+  margin: 0 39px 71px 0;
   h6 {
     padding: 60px 0 34px 0;
     @include accordion-header;
@@ -519,8 +522,14 @@ footer {
   }
 }
 
-.links, .blogroll, .about  {
+.links, .blogroll,  {
   @extend .socials;
+}
+
+.about {
+  @extend .socials;
+  float: right;
+  margin: 0 0 71px 0;
 }
 
 .contacts {
@@ -555,6 +564,5 @@ footer {
 
 .contscts__copyright {
   float: right;
-  padding-right: 79px;
   line-height: 19px;
 }

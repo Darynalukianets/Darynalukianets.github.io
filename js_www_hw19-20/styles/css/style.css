@@ -1,12 +1,6 @@
-html {
-  overflow-x: hidden; }
-
-body {
-  width: 1920px; }
-
 .wrapper {
   display: block;
-  width: 1240px;
+  width: 1160px;
   margin: 0 auto; }
   .wrapper:after {
     content: ".";
@@ -155,48 +149,51 @@ header {
     height: 0;
     clear: both;
     visibility: hidden; }
-  .features .features__item {
+  .features .features__item, .features .features__item--align {
     width: 360px;
-    margin-right: 39px;
+    margin-right: 33px;
     float: left;
     font-family: "Ubuntu", sans-serif; }
-    .features .features__item span {
+    .features .features__item span, .features .features__item--align span {
       font-size: 90px;
       font-weight: bold;
       color: rgba(42, 43, 46, 0.102);
       vertical-align: top; }
-    .features .features__item .features__content1, .features .features__item .features__content2, .features .features__item .features__content3 {
+    .features .features__item .features__content1, .features .features__item--align .features__content1, .features .features__item .features__content2, .features .features__item--align .features__content2, .features .features__item .features__content3, .features .features__item--align .features__content3 {
       display: inline-block;
       width: 240px;
       margin: 15px 0 0 14px;
       background: url(../../../img/features-sprite.png) no-repeat -4px -62px;
       font-size: 13px; }
-      .features .features__item .features__content1 h4, .features .features__item .features__content2 h4, .features .features__item .features__content3 h4 {
+      .features .features__item .features__content1 h4, .features .features__item--align .features__content1 h4, .features .features__item .features__content2 h4, .features .features__item--align .features__content2 h4, .features .features__item .features__content3 h4, .features .features__item--align .features__content3 h4 {
         font-family: "Ubuntu", sans-serif;
         color: #2a2b2e;
         font-weight: bold;
         margin: 48px 0 20px 4px;
         font-size: 20px; }
-      .features .features__item .features__content1 p, .features .features__item .features__content2 p, .features .features__item .features__content3 p {
+      .features .features__item .features__content1 p, .features .features__item--align .features__content1 p, .features .features__item .features__content2 p, .features .features__item--align .features__content2 p, .features .features__item .features__content3 p, .features .features__item--align .features__content3 p {
         font-size: 13px;
         font-family: "Arial";
         color: #8a8a8a;
         line-height: 20px;
         margin: 0 0 20px 0; }
-      .features .features__item .features__content1 a, .features .features__item .features__content2 a, .features .features__item .features__content3 a {
+      .features .features__item .features__content1 a, .features .features__item--align .features__content1 a, .features .features__item .features__content2 a, .features .features__item--align .features__content2 a, .features .features__item .features__content3 a, .features .features__item--align .features__content3 a {
         font-family: "Ubuntu", sans-serif;
         color: #2a2b2e;
         font-weight: bold;
         display: block;
         background: url(../../../img/readmore-arrow-sprite.png) no-repeat 72px -3px; }
-        .features .features__item .features__content1 a:hover, .features .features__item .features__content2 a:hover, .features .features__item .features__content3 a:hover {
+        .features .features__item .features__content1 a:hover, .features .features__item--align .features__content1 a:hover, .features .features__item .features__content2 a:hover, .features .features__item--align .features__content2 a:hover, .features .features__item .features__content3 a:hover, .features .features__item--align .features__content3 a:hover {
           color: #248cec;
           cursor: pointer;
           background: url(../../../img/readmore-arrow-sprite.png) no-repeat 72px -17px; }
-    .features .features__item .features__content2 {
+    .features .features__item .features__content2, .features .features__item--align .features__content2 {
       background: url(../../../img/features-sprite.png) no-repeat -36px -30px; }
-    .features .features__item .features__content3 {
+    .features .features__item .features__content3, .features .features__item--align .features__content3 {
       background: url(../../../img/features-sprite.png) no-repeat -68px -2px; }
+  .features .features__item--align {
+    margin-right: 0;
+    float: right; }
 
 .services {
   margin: 85px 0 61px 0;
@@ -220,7 +217,7 @@ header {
 
 .services__item1, .services__item2, .services__item3, .services__item4 {
   float: left;
-  margin-right: 40px;
+  margin-right: 39px;
   font-size: 16px;
   text-align: center; }
   .services__item1 a, .services__item2 a, .services__item3 a, .services__item4 a {
@@ -248,8 +245,11 @@ header {
 .services__item3 a {
   background: url(../../../img/services-sprite.png) no-repeat -14px -605px; }
 
-.services__item4 a {
-  background: url(../../../img/services-sprite.png) no-repeat -57px -884px; }
+.services__item4 {
+  float: right;
+  margin-right: 0; }
+  .services__item4 a {
+    background: url(../../../img/services-sprite.png) no-repeat -57px -884px; }
 
 .news {
   width: 560px;
@@ -329,8 +329,7 @@ header {
 
 .accordion-panels {
   width: 560px;
-  float: right;
-  margin-right: 80px; }
+  float: right; }
 
 .accordion-panels__header {
   font-family: "Ubuntu", sans-serif;
@@ -412,25 +411,25 @@ header {
       visibility: hidden; }
 
 .partners-logo__item1 a, .partners-logo__item2 a, .partners-logo__item3 a, .partners-logo__item4 a, .partners-logo__item5 a, .partners-logo__item6 a {
-  width: 206px;
+  width: 193px;
   height: 58px;
   float: left;
-  background: url(../../../img/partners-logo-sprite.png) no-repeat -9px 1px; }
+  background: url(../../../img/partners-logo-sprite.png) no-repeat -11px 1px; }
 
 .partners-logo__item2 a {
-  background: url(../../../img/partners-logo-sprite.png) no-repeat -24px -60px; }
+  background: url(../../../img/partners-logo-sprite.png) no-repeat -14px -60px; }
 
 .partners-logo__item3 a {
-  background: url(../../../img/partners-logo-sprite.png) no-repeat -4px -124px; }
+  background: url(../../../img/partners-logo-sprite.png) no-repeat 20px -124px; }
 
 .partners-logo__item4 a {
-  background: url(../../../img/partners-logo-sprite.png) no-repeat 0 -187px; }
+  background: url(../../../img/partners-logo-sprite.png) no-repeat 37px -187px; }
 
 .partners-logo__item5 a {
-  background: url(../../../img/partners-logo-sprite.png) no-repeat -4px -249px; }
+  background: url(../../../img/partners-logo-sprite.png) no-repeat 46px -249px; }
 
 .partners-logo__item6 a {
-  background: url(../../../img/partners-logo-sprite.png) no-repeat -31px -313px; }
+  background: url(../../../img/partners-logo-sprite.png) no-repeat 32px -313px; }
 
 footer {
   background-color: #2a2d32;
@@ -439,7 +438,7 @@ footer {
 .socials, .links, .blogroll, .about {
   width: 260px;
   float: left;
-  margin: 0 38px 71px 0; }
+  margin: 0 39px 71px 0; }
   .socials h6, .links h6, .blogroll h6, .about h6 {
     padding: 60px 0 34px 0;
     font-family: "Ubuntu", sans-serif;
@@ -463,6 +462,10 @@ footer {
         cursor: pointer; }
   .socials ul:first-child, .links ul:first-child, .blogroll ul:first-child, .about ul:first-child {
     border: none; }
+
+.about {
+  float: right;
+  margin: 0 0 71px 0; }
 
 .contacts {
   background-color: #35383c;
@@ -494,7 +497,6 @@ footer {
 
 .contscts__copyright {
   float: right;
-  padding-right: 79px;
   line-height: 19px; }
 
 /*# sourceMappingURL=style.css.map */
