@@ -22,6 +22,6 @@ require(
     'tmpl'
   ],
   function (model, view, controller, $, tmpl) {
-    
+
   }
 );
