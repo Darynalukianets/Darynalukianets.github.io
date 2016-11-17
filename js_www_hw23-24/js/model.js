@@ -14,6 +14,8 @@ define(
 
         self.data.push(item);
 
+        self.dataStorage(self.data);
+
         return self.data;
       };
 
@@ -25,6 +27,8 @@ define(
         };
 
         self.data.splice(index, 1);
+
+        self.dataStorage(self.data);
 
         return self.data;
       };
@@ -38,12 +42,22 @@ define(
 
         self.data[index] = editedItem;
 
+        self.dataStorage(self.data);
+
         return self.data;
       };
+
+      self.dataStorage = function(data) {
+        localStorage.setItem('toDoList', JSON.stringify(data));
+      }
     };
 
-    var firstToDoList = ["Wake up", "Make a cup of coffee", "Plan today's 'To do list'"];
-    return new Model(firstToDoList);
-
+    if (localStorage.getItem('toDoList')) {
+      var toDoList = localStorage.getItem('toDoList');
+      toDoList = JSON.parse(toDoList);
+      return new Model(toDoList);
+    } else {
+      return new Model(['Add first task in this list']);
+    }
   }
 );

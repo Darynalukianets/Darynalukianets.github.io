@@ -7,6 +7,12 @@ define(
       var self = this;
 
       view.elements.addBtn.on('click', addItem);
+      view.elements.input.keyup(function() {
+        if(event.keyCode==13) {
+          view.elements.addBtn.click();
+          return false;
+        }
+      });
       view.elements.listContainer.on('click', '.item-delete', removeItem);
       view.elements.listContainer.on('dblclick', '.item', editItem);
 
