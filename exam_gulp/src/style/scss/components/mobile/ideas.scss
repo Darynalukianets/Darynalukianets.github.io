@@ -1,0 +1,83 @@
+.ideas {
+  display: block;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 36px 10px;
+
+  &__title {
+    @include headBlack;
+    line-height: 25px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding-top: 17px;
+  }
+
+  &__form {
+    width: 287px;
+    margin: 0 auto;
+    padding-top: 33px;
+
+    &__title {
+      @include headBlack;
+      line-height: 25px;
+    }
+
+    &__text {
+      padding-bottom: 3px;
+      @include roboto;
+      line-height: 47px;
+    }
+
+    &__input {
+      height: 38px;
+      margin-bottom: 8px;
+      padding: 0 112px 0 15px;
+      border: 1px solid $lightGrey;
+      border-radius: 3px;
+      @include robotoS;
+      text-align: left;
+      color: $lightGrey;
+    }
+
+    &__search {
+      height: 40px;
+      width: 100%;
+      @include redLink;
+      border: none;
+    }
+  }
+}
+
+.grid {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.grid-sizer, .grid-item {
+  width: 100%;
+}
+
+.grid-item {
+  margin-bottom: 10px;
+}
+
+.ideas__img {
+  width: 100%;
+  height: 121px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.ideas__img__title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: $white;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+}

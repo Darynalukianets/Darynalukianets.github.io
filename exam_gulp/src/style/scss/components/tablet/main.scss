@@ -1,0 +1,123 @@
+.main {
+  background-color: $white;
+}
+
+.sliders--mob {
+  display: none;
+}
+
+.sliders {
+  @include clearfix;
+  display: block;
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__title {
+    @include headBlack;
+    padding: 97px 0 35px 0;
+  }
+}
+
+.slider {
+  @include clearfix;
+  display: block;
+  float: left;
+  height: 400px;
+  width: 30.7%;
+  margin: 0 1.2%;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &__list {
+    @include clearfix;
+    height: 400px;
+    position: relative;
+    width: 900px;
+  }
+
+  &__item {
+    display: block;
+    float: left;
+    height: 400px;
+    width: 300px !important;
+  }
+
+  &__link {
+    padding: 4px 13px;
+    border-radius: 20px;
+    background-color: $red;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 10px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    padding: 14px 0 11px;
+    font-family: 'Montserrat Bold', Arial, sans-serif;
+    font-size: 24px;
+    color: $white;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  &__text {
+    font-family: 'Roboto Light', Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: $lightGrey;
+    line-height: 16px;
+  }
+
+  &__arrow--left {
+    position: absolute;
+    float: left;
+    margin: 38px 0 0 20px;
+    height: 55px;
+    width: 34px;
+    background: url(../img/arrows.png) 0 0 no-repeat;
+    z-index: 1;
+  }
+
+  &__arrow--right {
+    position: absolute;
+    float: right;
+    margin: 38px 20px 0 189px;
+    height: 55px;
+    width: 34px;
+    background: url(../img/arrows.png) -32px 0 no-repeat;
+    z-index: 1;
+  }
+}
+
+.step1 {
+  background: url(../img/step1_bg.png) top center no-repeat;
+
+  .slider__container {
+    margin: 0 auto;
+    padding: 207px 19% 17px 17px;
+  }
+
+}
+
+.step2 {
+  background: url(../img/step2_bg.png) top center no-repeat;
+
+  .slider__container {
+    margin: 0 auto;
+    padding: 251px 19% 17px 17px;
+  }
+}
+
+.step3 {
+  background: url(../img/step3_bg.png) top center no-repeat;
+
+  .slider__container {
+    margin: 0 auto;
+    padding: 207px 19% 17px 17px;
+  }
+}

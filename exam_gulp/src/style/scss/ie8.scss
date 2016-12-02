@@ -1,0 +1,48 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "jquery.bxslider";
+@import "desktop";
+
+.main {
+  display: block;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+.sliders--mob {
+  display: none;
+
+  &__title {
+    display: none;
+  }
+}
+
+.slider--mob {
+  display: none;
+}
+
+.ideas {
+
+  &__form {
+
+    &__input {
+
+      height: 40px;
+      padding: 2px 64px 0 15px;
+    }
+
+    &__search {
+      height: 38px;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.copyright {
+
+  &__img {
+    text-align: right;
+  }
+}

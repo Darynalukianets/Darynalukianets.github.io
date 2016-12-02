@@ -1,0 +1,24 @@
+<section class="ideas">
+  <h2 class="ideas__title">Discover holiday activity ideas</h2>
+  <div class="ideas__container">
+
+    <script type="text/template" id="tmpl-ideas-grid">
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <% for (var i = 0; i < 7; i++) { %>
+          <figure class="grid-item">
+            <img src="<%= hits[i].webformatURL %>" alt="picture" class="ideas__img"/>
+            <figcaption class="ideas__img__title"><%= hits[i].tags.split(', ')[1] %></figcaption>
+          </figure>
+          <% }; %>
+        </div>
+      </script>
+
+  </div>
+  <form action="" class="ideas__form">
+    <p class="ideas__form__title">Discover holiday activity ideas</p>
+    <p class="ideas__form__text">Hi! What are your holiday interests?</p>
+    <input type="text" class="ideas__form__input" placeholder="Enter your interests">
+    <input type="submit" class="ideas__form__search" value="Search partners">
+  </form>
+</section>

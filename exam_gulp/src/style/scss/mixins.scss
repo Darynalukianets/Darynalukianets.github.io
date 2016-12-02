@@ -1,0 +1,63 @@
+@mixin clearfix {
+  display: block;
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+@mixin buttonFont {
+  font-family: 'Montserrat Bold', Arial, sans-serif;
+  font-size: 14px;
+  color: $white;
+}
+
+@mixin monserratS {
+  font-family: 'Montserrat Bold', Arial, sans-serif;
+  font-size: 14px;
+  color: $black;
+  text-align: center;
+}
+
+
+@mixin roboto {
+  font-family: 'Roboto Light', Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+@mixin robotoS {
+  font-family: 'Roboto Light', Arial, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: $grey;
+}
+
+@mixin redLink {
+  border-radius: 20px;
+  background-color: $red;
+  font-family: 'Montserrat Bold', Arial, sans-serif;
+  font-size: 14px;
+  color: $white;
+  text-align: center;
+}
+
+@mixin redWhiteLink {
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid $red;
+  font-family: 'Montserrat Bold', Arial, sans-serif;
+  font-size: 14px;
+  color: $red;
+  text-align: center;
+}
+
+@mixin headBlack {
+  font-family: 'Montserrat Bold', Arial, sans-serif;
+  font-size: 22px;
+  text-align: center;
+}

@@ -1,0 +1,487 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  height: inherit;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/header_bg_mob.jpg) 0 0 no-repeat;
+  background-position: top center;
+}
+
+.header {
+  max-width: 940px;
+  margin: 0 auto;
+  height: 540px;
+  width: 100%;
+}
+
+.login {
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  width: 168px;
+
+  &__item {
+    height: 32px;
+    padding: 0 14px;
+    @include buttonFont;
+    border: 2px solid transparent;
+    background-color: transparent;
+
+    &:hover {
+      border: 2px solid $white;
+      border-radius: 15px;
+    }
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  padding: 115px 0 0 0;
+  width: 185px;
+
+  &__text {
+    @include buttonFont;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.header__item {
+  width: 280px;
+  margin: 0 auto;
+  padding: 36px 0 0 0;
+
+  &__title {
+    font-family: 'Montserrat Bold', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 35px;
+    color: $white;
+  }
+
+  &__title--small {
+    padding: 12px 20px 21px 20px;
+    @include roboto;
+    color: $white;
+  }
+
+  &__link {
+    display: block;
+    @include redLink;
+    padding: 12px 50px;
+  }
+}
+
+.main {
+  background-color: $white;
+}
+
+.sliders--mob {
+  @include clearfix;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+
+  &__title {
+    @include headBlack;
+    padding: 37px 0 20px 0;
+  }
+}
+
+.slider--mob {
+  display: block;
+  height: 240px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 5px 0;
+
+  &__link {
+    padding: 4px 13px;
+    border-radius: 20px;
+    background-color: $red;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 10px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    padding: 13px 0 11px;
+    font-family: 'Montserrat Bold', Arial, sans-serif;
+    font-size: 24px;
+    color: $white;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  &__text {
+    font-family: 'Roboto Light', Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: $lightGrey;
+    line-height: 16px;
+  }
+}
+
+.step1--mob {
+  background: url(../img/step1_bg_mob.png) 0 0 no-repeat;
+
+  .slider--mob__container {
+    margin: 0 auto;
+    padding: 64px 17px 17px;
+  }
+
+}
+
+.step2--mob {
+  @extend .step1--mob;
+  background: url(../img/step2_bg_mob.png) 0 0 no-repeat;
+
+  .slider--mob__container {
+    margin: 0 auto;
+    padding: 99px 17px 17px;
+  }
+}
+
+.step3--mob {
+  @extend .step1--mob;
+  background: url(../img/step3_bg_mob.png) 0 0 no-repeat;
+}
+
+.sliders {
+  display: none;
+  max-width: 940px;
+
+  &__title {
+    @include headBlack;
+    padding: 97px 0 35px 0;
+  }
+}
+
+.slider {
+  @include clearfix;
+  display: block;
+  float: left;
+  height: 400px;
+  width: 30.7%;
+  margin: 0 1.2%;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &__list {
+    @include clearfix;
+    height: 400px;
+    position: relative;
+    width: 900px;
+  }
+
+  &__item {
+    display: block;
+    float: left;
+    height: 400px;
+    width: 300px;
+  }
+
+  &__link {
+    padding: 4px 13px;
+    border-radius: 20px;
+    background-color: $red;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 10px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    padding: 14px 0 11px;
+    font-family: 'Montserrat Bold', Arial, sans-serif;
+    font-size: 24px;
+    color: $white;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  &__text {
+    font-family: 'Roboto Light', Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: $lightGrey;
+    line-height: 16px;
+  }
+
+  &__arrow--left {
+    position: absolute;
+    float: left;
+    margin: 38px 0 0 20px;
+    height: 55px;
+    width: 34px;
+    background: url(../img/arrows.png) 0 0 no-repeat;
+    z-index: 1;
+  }
+
+  &__arrow--right {
+    @extend .slider__arrow--left;
+    float: right;
+    margin: 38px 20px 0 189px;
+    background: url(../img/arrows.png) -32px 0 no-repeat;
+  }
+}
+
+.step1 {
+  background: url(../img/step1_bg.png) top center no-repeat;
+
+  .slider__container {
+    margin: 0 auto;
+    padding: 207px 17px 17px;
+  }
+
+}
+
+.step2 {
+  @extend .step1;
+  background: url(../img/step2_bg.png) top center no-repeat;
+
+  .slider__container {
+    margin: 0 auto;
+    padding: 251px 17px 17px;
+  }
+}
+
+.step3 {
+  @extend .step1;
+  background: url(../img/step3_bg.png) top center no-repeat;
+}
+
+.partners {
+  display: block;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 19px;
+
+  &__title {
+    @include headBlack;
+    margin: 0 auto;
+    padding: 28px 0 20px 0;
+    line-height: 30px;
+  }
+
+  &__item {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+      width: 120px;
+      height: 121px;
+    }
+
+    &__title {
+      margin: 0 auto;
+      padding: 18px 0 18px 0;
+      @include monserratS;
+    }
+
+    &__text {
+      padding: 0 3px;
+      @include robotoS;
+      line-height: 16px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 276px;
+    padding: 10px 0;
+    @include redWhiteLink;
+  }
+}
+
+.partner1 {
+  background: url(../img/partners_sprite.png) -21px -8px no-repeat;
+}
+
+.partner2 {
+  background: url(../img/partners_sprite.png) -172px -10px no-repeat;
+}
+
+.partner3 {
+  background: url(../img/partners_sprite.png) -324px -9px no-repeat;
+}
+
+.partner4 {
+  background: url(../img/partners_sprite.png) -477px -11px no-repeat;
+}
+
+.ideas {
+  display: block;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 36px 10px;
+
+  &__title {
+    @include headBlack;
+    line-height: 25px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    padding-top: 17px;
+  }
+
+  &__form {
+    width: 287px;
+    margin: 0 auto;
+    padding-top: 33px;
+
+    &__title {
+      @extend .ideas__title;
+    }
+
+    &__text {
+      padding-bottom: 3px;
+      @include roboto;
+      line-height: 47px;
+    }
+
+    &__input {
+      height: 38px;
+      margin-bottom: 8px;
+      padding: 0 112px 0 15px;
+      border: 1px solid $lightGrey;
+      border-radius: 3px;
+      @include robotoS;
+      text-align: left;
+      color: $lightGrey;
+    }
+
+    &__search {
+      height: 40px;
+      width: 100%;
+      @include redLink;
+      border: none;
+    }
+  }
+}
+
+.grid {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.grid-sizer, .grid-item {
+  width: 100%;
+}
+
+.grid-item {
+  margin-bottom: 10px;
+}
+
+.ideas__img {
+  width: 100%;
+  height: 121px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.ideas__img__title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: $white;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.footer {
+  width: 100%;
+  border-top: 4px solid $red;
+
+  &-wrap {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    @extend .footer-nav__title;
+  }
+
+  &-nav {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+
+    &__title {
+      @include monserratS;
+    }
+
+    &__container {
+      display: block;
+      width: 203px;
+      margin: 0 auto;
+      padding-top: 5px;
+    }
+
+    &__item {
+      display: inline-block;
+    }
+
+    &__link {
+      @include robotoS;
+      padding: 0 4px;
+    }
+  }
+}
+
+.logo--footer {
+  display: block;
+  margin: 0 auto;
+  padding: 18px 0 15px 0;
+
+  .logo--footer__text {
+    font-family: 'Montserrat Bold', Arial, sans-serif;
+    font-size: 16px;
+    color: $red;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.copyright {
+  display: block;
+  width: 115px;
+  margin: 0 auto;
+  padding: 17px 0;
+
+  &__text {
+    padding-bottom: 8px;
+    font-family: 'Montserrat Bold', Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: $lightGrey;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__img {
+    text-align: center;
+  }
+}

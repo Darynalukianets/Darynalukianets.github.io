@@ -1,0 +1,50 @@
+.partners {
+  display: block;
+  max-width: 940px;
+  margin: 0 auto;
+
+  &__title {
+    @include headBlack;
+    margin: 0 auto;
+    padding: 95px 0 19px 265px;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  &__item {
+    display: inline-block;
+    height: 235px;
+    width: 220px;
+    margin: 0 auto;
+    padding: 0 15px 49px 0;
+    vertical-align: bottom;
+
+    &--size {
+      padding: 0 0 49px 0;
+    }
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin: 0 auto;
+      padding: 16px 0 14px 0;
+      @include monserratS;
+    }
+
+    &__text {
+      padding: 0 3px;
+      @include robotoS;
+      line-height: 16px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 191px;
+    padding: 11px 0;
+    @include redWhiteLink;
+  }
+}

@@ -1,0 +1,44 @@
+.partners {
+  display: block;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 19px;
+
+  &__title {
+    @include headBlack;
+    margin: 0 auto;
+    padding: 28px 0 20px 0;
+    line-height: 30px;
+  }
+
+  &__item {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+    &__img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin: 0 auto;
+      padding: 18px 0 18px 0;
+      @include monserratS;
+    }
+
+    &__text {
+      padding: 0 3px;
+      @include robotoS;
+      line-height: 16px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 276px;
+    padding: 10px 0;
+    @include redWhiteLink;
+  }
+}

@@ -1,0 +1,82 @@
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  height: inherit;
+  position: relative;
+  overflow: hidden;
+  background: url(../img/header_bg_desktop.jpg) 0 0 no-repeat;
+  background-position: top center;
+}
+
+.header {
+  max-width: 940px;
+  margin: 0 auto;
+  height: 700px;
+  width: 100%;
+}
+
+.login {
+  float: right;
+  clear: right;
+  padding: 40px 0 0 0;
+  width: 168px;
+
+  &__item {
+    height: 32px;
+    padding: 0 14px;
+    @include buttonFont;
+    border: 2px solid transparent;
+    background-color: transparent;
+
+    &:hover {
+      border: 2px solid $white;
+      border-radius: 15px;
+    }
+  }
+}
+
+.logo {
+  float: left;
+  clear: left;
+  padding: 48px 0 0 0;
+  width: 185px;
+
+  &__text {
+    @include buttonFont;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 1.1px;
+  }
+}
+
+.header__item {
+  width: 492px;
+  margin: 0 auto;
+  padding: 215px 0 0 0;
+
+  &__title {
+    font-family: 'Montserrat Bold', Arial, sans-serif;
+    font-size: 52px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 63px;
+    color: $white;
+  }
+
+  &__title--small {
+    padding: 24px 20px 28px 20px;
+    @include roboto;
+    color: $white;
+    font-size: 24px;
+  }
+
+  &__link {
+    display: block;
+    margin: 10px 133px 0 133px;
+    @include redLink;
+    padding: 13px 22px;
+  }
+}
