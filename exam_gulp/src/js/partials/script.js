@@ -10,13 +10,13 @@ $(function () {
         $grid.masonry({
             itemSelector: '.grid-item',
             percentPosition: true,
-            columnWidth: '.grid-sizer'
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer'
         });
     });
   };
 
   function search() {
-    $('.ideas__container').find('div').remove();
     var $inputValue = $(":text").val();
 
     $.ajax({
@@ -25,11 +25,14 @@ $(function () {
       method: 'GET',
       dataType: 'jsonp',
       success: function(data) {
-
-        var $html = $('#tmpl-ideas-grid').html();
-        var $content = tmpl($html, data);
-        $('.ideas__container').append($content);
-        grid();
+        if (data.hits.length > 0) {
+          for (var i = 0; i < 7; i++) {
+            $('.image' + [i + 1]).append('<a href=" ' + data.hits[i].webformatURL + ' " class="grid-item__title">' + data.hits[i].tags.split(', ')[1] + '</a>');
+            $('.image' + [i + 1]).css({
+              'backgroundImage': 'url("' + data.hits[i].webformatURL + '")'
+            });
+          }
+        }
       },
       error: function() {
         console.log('Some error happened');
