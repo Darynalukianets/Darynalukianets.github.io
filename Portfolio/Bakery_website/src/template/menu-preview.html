@@ -1,0 +1,47 @@
+<div class="menu-preview">
+  <div class="menu-preview__container">
+    <ul class="prep-time">
+      <!-- контент этих маленьких повторяющихся блоков можно запилить с помощью шаблона (в т.ч. и информацию о каждом из блюд (поместить в объект все блюда, где в свою очередь блюдо тоже является объектом)) -->
+      <li class="prep-time__ready-in">
+        <h6 class="prep-time__ready-in__title">ready in</h6>
+        <span class="prep-time__ready-in__amount">40</span>
+        <span class="prep-time__ready-in__units">ьmins</span>
+      </li>
+    </ul>
+    <div class="menu-preview__item">
+      <!-- элементу menu-preview__item задаем бэкграунд-заливку светлым цветом -->
+      <div class="menu-preview__item__img"></div>
+      <!-- Добавить <button class="menu-preview__item__button"></button> с попомщью :before для сворачивания-разворачивания описания блюда и слайдера -->
+      <div class="menu-preview__item__content">
+        <!-- элементу menu-preview__item__content задаем бэкграундом водяной знак мельницы -->
+        <h2 class="menu-preview__item__title">tasty pancakes</h2>
+        <h3 class="menu-preview__item__title--font">season favourite</h3>
+        <p class="menu-preview__item__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+        <div class="raiting">
+          <img src="" alt="" class="raiting__star">
+          <img src="" alt="" class="raiting__star">
+          <img src="" alt="" class="raiting__star">
+          <img src="" alt="" class="raiting__star">
+          <img src="" alt="" class="raiting__star">
+        </div>
+        <div class="menu-preview__item__slider">
+          <button class="slider__button--left"></button>
+          <div class="slider__items-container">
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+            <div class="slider__item"></div>
+          </div>
+          <button class="slider__button--right"></button>
+          <div class="slider__nav">
+            <div class="slider__nav__item"></div>
+            <div class="slider__nav__item"></div>
+            <div class="slider__nav__item"></div>
+            <div class="slider__nav__item"></div>
+          </div>
+        </div>
+      </div>
+      <!-- попробовать здесь внутри реализовать уголок с помощью css -->
+    </div>
+  </div>
+</div>

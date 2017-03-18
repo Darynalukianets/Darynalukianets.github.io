@@ -1,0 +1,84 @@
+// .about {
+//   background: url(../../src/img/header_bckgr.jpg) $white 0 0 no-repeat;
+// }
+// создать миксин для одинаковых стилей (миксин с передай параметров или миксин с дефолтным значением,которое потом можно изменять!) или использовать @extend, чтобы стили для заголовков не повторялись снова и снова
+.about__title {
+  font-family: "Alegreya Bold";
+  color: $h2DarkGrey;
+  text-align: center;
+
+  &--style {
+    font-family: "Alegreya Bold";
+    color: $h3Brown;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.about__text {
+  font-family: "Lato Regular";
+  color: $h2DarkGrey;
+  text-align: center;
+}
+
+.about__chef {
+  width: 410px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about__chef__title {
+  font-family: "Alegreya Bold";
+  color: $h2DarkGrey;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.about__chef__name {
+  font-family: "Alegreya Regular";
+  color: $h2DarkGrey;
+  border-top: 1px solid $boneAboutBorders;
+  border-bottom: 1px solid $boneAboutBorders;
+  text-align: center;
+}
+
+.about__chef__img {
+  
+}
+
+.about__chef__quote {
+  font-size: 24px;
+  font-family: "Scriptina Regular";
+  color: $h3Brown;
+  text-align: center;
+
+  &::before {
+    display: inline-block;
+    content: '“';
+    font-size: 60px;
+    font-family: "Times New Roman";
+    color: $quotesGrey;
+  }
+
+  &::after {
+    display: inline-block;
+    content: '„';
+    font-size: 60px;
+    font-family: "Times New Roman";
+    color: $quotesGrey;
+  }
+}
+
+.Quisque_rutrum__Aenean_imperdiet__Etiam_ultrici {
+  font-size: 14px;
+  font-family: "ProximaNova";
+  color: rgb(86, 83, 76);
+  line-height: 1.714;
+  text-align: center;
+  position: absolute;
+  left: 213.451px;
+  top: 1162.25px;
+  width: 501px;
+  height: 102px;
+  z-index: 237;
+}

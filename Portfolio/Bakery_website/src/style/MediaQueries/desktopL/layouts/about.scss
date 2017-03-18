@@ -1,0 +1,47 @@
+.about__container {
+  width: 78.75%;
+  margin: 0 auto;
+  @include clearfix;
+}
+
+.about__article,  {
+  width: 50%;
+  float: left;
+}
+
+.about__title {
+  font-size: 48px;
+  margin: 91px 0 10px 3px;
+  letter-spacing: 1px;
+  &--style {
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    margin-left: 4px;
+  }
+}
+
+.about__text {
+  padding: 60px 67px 40px;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.5px;
+}
+
+.about__chef__title {
+  margin-bottom: 4px;
+  padding-left: 6px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.about__chef__name {
+  display: inline-block;
+  width: 111px;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.about__media {
+  width: 50%;
+  float: right;
+}

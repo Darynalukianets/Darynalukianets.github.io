@@ -1,0 +1,23 @@
+// Подключаем компоненты из папки, чтобы закинклюдить этот файл в main.scss
+// При подключении компонентов из папки проверить не совпадают ли стили каждого из отдельных блоков полностью со стилями отдельного блока другого разрешения (с таблеткой). Если да  то максимально упростить и уменьшить код, чтобы он не повторялся!
+
+@media (min-width: 1200px) {
+  @import "layouts/header.scss";
+  @import "layouts/about.scss";
+  @import "layouts/menu-preview.scss";
+  @import "layouts/menu-complete.scss";
+  @import "layouts/special.scss";
+  @import "layouts/footer.scss";
+
+  .page-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .content-wrapper {
+    width: 78.75%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}

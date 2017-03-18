@@ -1,0 +1,7 @@
+// пишем сюда стили без media-quries и вставляем их в начало main.scss после включения общих стилей-составляющих всего сайта из core и omponents
+@import "layouts/header.scss";
+@import "layouts/about.scss";
+@import "layouts/menu-preview.scss";
+@import "layouts/menu-complete.scss";
+@import "layouts/special.scss";
+@import "layouts/footer.scss";
