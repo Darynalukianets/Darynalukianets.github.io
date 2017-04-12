@@ -1,64 +1,64 @@
 $(function() {
   // Carousel
-    $('.jcarousel').jcarousel();
+  $('.jcarousel').jcarousel();
 
-    $('.jcarousel-prev')
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .jcarouselControl({
-                target: '-=1'
-            });
+  $('.jcarousel-prev')
+    .on('jcarouselcontrol:active', function() {
+      $(this).removeClass('inactive');
+    })
+    .on('jcarouselcontrol:inactive', function() {
+      $(this).addClass('inactive');
+    })
+    .jcarouselControl({
+      target: '-=1'
+    });
 
-    $('.jcarousel-next')
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .jcarouselControl({
-                target: '+=1'
-            });
+  $('.jcarousel-next')
+    .on('jcarouselcontrol:active', function() {
+      $(this).removeClass('inactive');
+    })
+    .on('jcarouselcontrol:inactive', function() {
+      $(this).addClass('inactive');
+    })
+    .jcarouselControl({
+      target: '+=1'
+    });
 
-    $('.jcarousel-pagination')
-            .on('jcarouselpagination:active', 'a', function() {
-                $(this).addClass('active');
-            })
-            .on('jcarouselpagination:inactive', 'a', function() {
-                $(this).removeClass('active');
-            })
-            .jcarouselPagination();
+  $('.jcarousel-pagination')
+    .on('jcarouselpagination:active', 'a', function() {
+      $(this).addClass('active');
+    })
+    .on('jcarouselpagination:inactive', 'a', function() {
+      $(this).removeClass('active');
+    })
+    .jcarouselPagination();
 
 // Select plagin inicialisation
-    $(document).ready(function(){
-            $("#styledSelect").heapbox();
-        });
+  $(document).ready(function(){
+    $("#styledSelect").heapbox();
+  });
 
 // alternative select plagin
-        // $(document).ready(function(){
-        //     $('#styledSelect').customSelect();
-        // });
+// $(document).ready(function(){
+//     $('#styledSelect').customSelect();
+// });
 
-    $('.niceCheck').each(
-      function() {
-        changeCheckStart($(this));
-      });
+  $('.niceCheck').each(
+    function() {
+      changeCheckStart($(this));
+    });
 
 // slide down menu + changing color with jquery.color plagin
-    $('.dropdown').hover(function() {
+  $('.dropdown').hover(function() {
+    $(this).children('.sub-menu')
+      .slideDown(200)
+      .animate({backgroundColor:'#464443',}, 500);
+    },
+    function(){
       $(this).children('.sub-menu')
-         .slideDown(200)
-         .animate({backgroundColor:'#464443',}, 500);
-      },
-      function(){
-        $(this).children('.sub-menu')
-          .slideUp(200)
-          .animate({backgroundColor:'#6a6766',}, 500);
-      });
+        .slideUp(200)
+        .animate({backgroundColor:'#6a6766',}, 500);
+    });
 });
 
 function changeCheck(el) {
@@ -99,20 +99,20 @@ function changeCheckStart (el) {
         checkValue = el.attr('value');
 
     if(checkChecked)
-        el.after('<span class="niceCheck niceChecked">' +
-                 '<input type="checkbox"' +
-                 'name="' + checkName + '"' +
-                 'id="' + checkId + '"' +
-                 'checked="' + checkChecked + '"' +
-                 'value="' + checkValue + '"' +
-                 'tabindex="' + checkTab + '" /></span>');
+      el.after('<span class="niceCheck niceChecked">' +
+              '<input type="checkbox"' +
+              'name="' + checkName + '"' +
+              'id="' + checkId + '"' +
+              'checked="' + checkChecked + '"' +
+              'value="' + checkValue + '"' +
+              'tabindex="' + checkTab + '" /></span>');
     else
-        el.after('<span class="niceCheck">' +
-                 '<input type="checkbox"' +
-                 'name="' + checkName + '"' +
-                 'id="' + checkId + '"' +
-                 'value="' + checkValue + '"' +
-                 'tabindex="' + checkTab + '" /></span>');
+      el.after('<span class="niceCheck">' +
+              '<input type="checkbox"' +
+              'name="' + checkName + '"' +
+              'id="' + checkId + '"' +
+              'value="' + checkValue + '"' +
+              'tabindex="' + checkTab + '" /></span>');
     if(checkDisabled) {
       el.next().addClass('niceCheckDisabled');
       el.next().find('input').eq(0).attr('disabled','disabled');

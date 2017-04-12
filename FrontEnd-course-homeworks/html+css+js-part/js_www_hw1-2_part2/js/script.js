@@ -10,17 +10,17 @@ var listItem;
 var checkResult;
 
 for (var i = 0; i < 5; i++) {
-    listItem = userNamesList[i];
+  listItem = userNamesList[i];
 
-    if (inputedUserName == listItem) {
-        checkResult = true;
-        console.log('true');
-        break;
-      } else {
-        checkResult = false;
-        console.log('false');
-      }
+  if (inputedUserName == listItem) {
+    checkResult = true;
+    console.log('true');
+    break;
+  } else {
+    checkResult = false;
+    console.log('false');
   }
+}
 
 if (checkResult == true) {
   alert(inputedUserName + ', вы успешно вошли');

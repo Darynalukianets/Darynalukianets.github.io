@@ -6,12 +6,12 @@ $(function(){
   };
 
   $(document).on("click", ".slider-toggle__item", function() {
-   var obj = $(this).attr("id").slice(6);//узнаем порядковый номер кликнутого элемента
-   console.log(obj);
-   $(".slider-toggle__item--active").removeClass("slider-toggle__item--active").addClass("slider-toggle__item");//находим элемент с модификатором активности, удаляем класс с модификатором и присваиваем класс неактивного переключателя
-   $(this).removeClass("slider-toggle__item").addClass("slider-toggle__item--active");//добавляем модификатор кликнутого переключателя кликнутому переключателю
-   sliderJS(obj); // слайдим
-   return false;
+    var obj = $(this).attr("id").slice(6);//узнаем порядковый номер кликнутого элемента
+    console.log(obj);
+    $(".slider-toggle__item--active").removeClass("slider-toggle__item--active").addClass("slider-toggle__item");//находим элемент с модификатором активности, удаляем класс с модификатором и присваиваем класс неактивного переключателя
+    $(this).removeClass("slider-toggle__item").addClass("slider-toggle__item--active");//добавляем модификатор кликнутого переключателя кликнутому переключателю
+    sliderJS(obj); // слайдим
+    return false;
   });
 
   $(document).on("click", ".accordion-panels__item", function() {

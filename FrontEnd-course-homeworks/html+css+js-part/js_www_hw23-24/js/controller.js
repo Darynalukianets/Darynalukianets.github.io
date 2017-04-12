@@ -40,11 +40,11 @@ define(
         view.elements.listContainer.on('click', '.item-cancel-edit', cancelEdit);
 
         function saveEditedItem () {
-            var editedItem = $(this).parent().find('.item-value').val();
-            var editedItem = itemChildren[0].value;
-            model.editItem(item, editedItem);
+          var editedItem = $(this).parent().find('.item-value').val();
+          var editedItem = itemChildren[0].value;
+          model.editItem(item, editedItem);
 
-            view.renderList(model.data);
+          view.renderList(model.data);
         };
 
         function cancelEdit () {

@@ -4,12 +4,9 @@ var body = document.getElementsByTagName('body')[0],
  question = {
    text : 'Вопрос №',
    ansvers: [
-     {text : 'Вариант ответа №1',
-     correct : true},
-     {text : 'Вариант ответа №2',
-     correct : true},
-     {text : 'Вариант ответа №3',
-     correct : true}
+     {text : 'Вариант ответа №1', correct : true},
+     {text : 'Вариант ответа №2', correct : true},
+     {text : 'Вариант ответа №3', correct : true}
    ],
    getQuestion: function(n) {
      var list = '';

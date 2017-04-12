@@ -5,30 +5,21 @@ let testContent = {
   questions: [
     {question: 'Вопрос №1',
      ansvers: [
-      {text: 'Вариант ответа №1',
-      correct: true},
-      {text: 'Вариант ответа №2',
-      correct: false},
-      {text: 'Вариант ответа №3',
-      correct: true}
+      {text: 'Вариант ответа №1', correct: true},
+      {text: 'Вариант ответа №2', correct: false},
+      {text: 'Вариант ответа №3', correct: true}
     ]},
     {question: 'Вопрос №2',
      ansvers: [
-      {text: 'Вариант ответа №1',
-      correct: false},
-      {text: 'Вариант ответа №2',
-      correct: true},
-      {text: 'Вариант ответа №3',
-      correct: true}
+      {text: 'Вариант ответа №1', correct: false},
+      {text: 'Вариант ответа №2', correct: true},
+      {text: 'Вариант ответа №3', correct: true}
     ]},
     {question: 'Вопрос №3',
      ansvers: [
-      {text: 'Вариант ответа №1',
-      correct: false},
-      {text: 'Вариант ответа №2',
-      correct: false},
-      {text: 'Вариант ответа №3',
-      correct : true}
+      {text: 'Вариант ответа №1', correct: false},
+      {text: 'Вариант ответа №2', correct: false},
+      {text: 'Вариант ответа №3', correct : true}
     ]}
   ],
   check: 'Проверить мои результаты',
