@@ -1,0 +1,77 @@
+.prep-time {
+  display: block;
+  width: 200px;
+}
+
+.prep-time__prep {
+  padding: 48px 0 46px;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+
+.prep-time__prep__title {
+  font-family: 'Alegreya Bold';
+  text-transform: uppercase;
+  color: $h3Brown;
+  font-size: 18px;
+  letter-spacing: 1.9px;
+  line-height: 15px;
+}
+
+.prep-time__prep__amount {
+  font-family: 'Alegreya Bold';
+  color: $h2DarkGrey;
+  display: block;
+  font-size: 60px;
+  letter-spacing: 10px;
+  padding: 13px 0 0 13px;
+}
+
+.prep-time__prep__units {
+  // при любых правках в этом блоке - помним что эти настройки идеальны для .prep-time__ready-in__units
+  font-family: 'Alegreya Bold';
+  color: $eggShell;
+  display: block;
+  font-size: 17px;
+  letter-spacing: 2.5px;
+  padding-left: 4px;
+}
+
+.prep-time__cook {
+  @extend .prep-time__prep;
+}
+
+.prep-time__cook__title {
+  @extend .prep-time__prep__title;
+}
+
+.prep-time__cook__amount {
+  @extend .prep-time__prep__amount;
+}
+
+.prep-time__cook__units {
+  @extend .prep-time__prep__units;
+}
+
+.prep-time__ready-in {
+  padding: 33px 0 30px;
+  background: url(../../src/img/ready_in_bckgr.png) center center no-repeat;
+  text-align: center;
+}
+
+.prep-time__ready-in__title {
+  @extend .prep-time__prep__title;
+}
+
+.prep-time__ready-in__amount {
+  font-family: 'Alegreya Bold';
+  color: $iconsHazelLight;
+  display: block;
+  font-size: 92px;
+  letter-spacing: 10px;
+  padding: 13px 0 0 13px;
+}
+
+.prep-time__ready-in__units {
+  @extend .prep-time__prep__units;
+}

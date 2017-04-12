@@ -1,7 +1,7 @@
 
 header {
   width: 100%;
-  background: url(../../src/img/header_bckgr.jpg) 0 0 no-repeat;
+  background: url(../../src/img/header_bckgr.jpg) center center no-repeat;
 }
 
 .head {
@@ -79,8 +79,9 @@ header {
 
 .header__border-elem {
   position: absolute;
-  width: 110px;
+  width: 8.74%;
   height: 110px;
-  background: url(../../src/img/header_border.png) 0 0 no-repeat;
-  margin: -49px 0 0 574px;
+  background: url(../../src/img/header_border.png) center center no-repeat;
+  top: 851px;
+  left: 45.63%;
 }

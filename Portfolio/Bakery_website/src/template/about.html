@@ -9,18 +9,29 @@
         <span class="about__chef__name">Benito</span>
         <img class="about__chef__img" src="../src/img/about_avatar.png" alt="chef avatar">
         <span class="about__chef__name">Gaspare</span>
-        <p class="about__chef__quote">Unique creations for unique occasions.</p>
-        <!-- реализовыать кавычки с помощью :before :after -->
+        <div class="about__chef__quote">
+          <span class="about__chef__quote__mark--opening">&ldquo;</span>
+          <p class="about__chef__quote__text">Unique creations for unique occasions.</p>
+          <span class="about__chef__quote__mark--closening">&rdquo;</span>
+        </div>
       </div>
     </article>
     <div class="about__media">
+      <div class="about__media__sticker"><span class="about__media__sticker__text">tastes so good!</span></div>
       <!-- стикер пустить поверх блоков с картинками -->
-      <div class="about__media__caption">tastes so good!</div>
-      <div class="about__media__item"></div>
+      <div class="about__media__item--top-left">
+        <div class="about__media__item__overlay"></div>
+      </div>
       <!-- бордеры реализовать играясь с видами бордеров и прозрачностью -->
-      <div class="about__media__item"></div>
-      <div class="about__media__item"></div>
-      <div class="about__media__item"></div>
+      <div class="about__media__item--top-right">
+        <div class="about__media__item__overlay"></div>
+      </div>
+      <div class="about__media__item--bottom-left">
+        <div class="about__media__item__overlay"></div>
+      </div>
+      <div class="about__media__item--bottom-right">
+        <div class="about__media__item__overlay"></div>
+      </div>
     </div>
   </div>
 </section>

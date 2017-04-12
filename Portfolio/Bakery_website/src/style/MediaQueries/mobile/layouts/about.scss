@@ -1,6 +1,6 @@
-// .about {
-//   background: url(../../src/img/header_bckgr.jpg) $white 0 0 no-repeat;
-// }
+.about {
+  background: url(../../src/img/about_bckgr.png) center center no-repeat;
+}
 // создать миксин для одинаковых стилей (миксин с передай параметров или миксин с дефолтным значением,которое потом можно изменять!) или использовать @extend, чтобы стили для заголовков не повторялись снова и снова
 .about__title {
   font-family: "Alegreya Bold";
@@ -22,8 +22,9 @@
 }
 
 .about__chef {
-  width: 410px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 2px;
   text-align: center;
 }
 
@@ -43,42 +44,52 @@
 }
 
 .about__chef__img {
-  
+
 }
 
 .about__chef__quote {
-  font-size: 24px;
+
+}
+
+.about__chef__quote__text {
   font-family: "Scriptina Regular";
   color: $h3Brown;
   text-align: center;
-
-  &::before {
-    display: inline-block;
-    content: '“';
-    font-size: 60px;
-    font-family: "Times New Roman";
-    color: $quotesGrey;
-  }
-
-  &::after {
-    display: inline-block;
-    content: '„';
-    font-size: 60px;
-    font-family: "Times New Roman";
-    color: $quotesGrey;
-  }
 }
 
-.Quisque_rutrum__Aenean_imperdiet__Etiam_ultrici {
-  font-size: 14px;
-  font-family: "ProximaNova";
-  color: rgb(86, 83, 76);
-  line-height: 1.714;
-  text-align: center;
-  position: absolute;
-  left: 213.451px;
-  top: 1162.25px;
-  width: 501px;
-  height: 102px;
-  z-index: 237;
+.about__chef__quote__mark--opening {
+  display: block;
+  font-family: "Times New Roman";
+  color: $quotesGrey;
+  text-align: left;
+}
+
+.about__chef__quote__mark--closening {
+  display: block;
+  font-family: "Times New Roman";
+  color: $quotesGrey;
+  text-align: right;
+}
+
+.about__media__item--top-left {
+  display: inline-block;
+  margin: 10px 1.59% 7px;
+  width: 46.5%;
+  height: 250px;
+  background: url(../../src/img/about_food_top_left.jpg) -2px -15px no-repeat;
+}
+
+.about__media__item--top-right {
+  @extend .about__media__item--top-left;
+  background: url(../../src/img/about_food_top_right.jpg) -56px -6px no-repeat;
+}
+
+.about__media__item--bottom-left {
+  @extend .about__media__item--top-left;
+  background: url(../../src/img/about_food_bottom_left.jpg) -8px -94px no-repeat;
+}
+
+.about__media__item--bottom-right {
+  @extend .about__media__item--top-left;
+  background: url(../../src/img/about_food_bottom_right.jpg) -26px -25px no-repeat;
 }

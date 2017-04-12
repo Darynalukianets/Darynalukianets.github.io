@@ -5,39 +5,62 @@
       <li class="prep-time__ready-in">
         <h6 class="prep-time__ready-in__title">ready in</h6>
         <span class="prep-time__ready-in__amount">40</span>
-        <span class="prep-time__ready-in__units">ьmins</span>
+        <span class="prep-time__ready-in__units">mins</span>
       </li>
     </ul>
     <div class="menu-preview__item">
       <!-- элементу menu-preview__item задаем бэкграунд-заливку светлым цветом -->
+      <!-- эффект загнутого уголка делаем через :before c треугольником (треугольник должен бросать такую же тенюху как и основной блок) затираем ненужный угол блока (чтобы он не наплывал на бэкгрунд с фоткой) с помощью clip-path: polygon -->
       <div class="menu-preview__item__img"></div>
       <!-- Добавить <button class="menu-preview__item__button"></button> с попомщью :before для сворачивания-разворачивания описания блюда и слайдера -->
       <div class="menu-preview__item__content">
         <!-- элементу menu-preview__item__content задаем бэкграундом водяной знак мельницы -->
-        <h2 class="menu-preview__item__title">tasty pancakes</h2>
+        <h2 class="menu-preview__item__title">Tasty pancakes</h2>
         <h3 class="menu-preview__item__title--font">season favourite</h3>
         <p class="menu-preview__item__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
-        <div class="raiting">
-          <img src="" alt="" class="raiting__star">
-          <img src="" alt="" class="raiting__star">
-          <img src="" alt="" class="raiting__star">
-          <img src="" alt="" class="raiting__star">
-          <img src="" alt="" class="raiting__star">
-        </div>
+        <!-- рейтинг должен быть реализован с помощью js  и завязан на слайдер и информацию о каждом блюде, хранящуюся в объекте -->
+        <ul class="raiting">
+          <li class="raiting__item">
+            <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+          </li>
+          <li class="raiting__item">
+            <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+          </li>
+          <li class="raiting__item">
+            <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+          </li>
+          <li class="raiting__item">
+            <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+          </li>
+          <li class="raiting__item">
+            <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+          </li>
+        </ul>
         <div class="menu-preview__item__slider">
-          <button class="slider__button--left"></button>
-          <div class="slider__items-container">
-            <div class="slider__item"></div>
-            <div class="slider__item"></div>
-            <div class="slider__item"></div>
-            <div class="slider__item"></div>
+          <div class="slider__button--left"></div>
+          <!-- вуставить дополнительный блок в случае прокрутки слайдера -->
+          <div class="slider__container-hider">
+            <ul class="slider__list">
+              <li class="slider__item--pancakes">
+                <!-- <img src="../src/img/menu_slider_item1.jpg" alt="" class="slider__img"> -->
+              </li>
+              <li class="slider__item--sandwitch">
+                <!-- <img src="../src/img/menu_slider_item2.jpg" alt="" class="slider__img"> -->
+              </li>
+              <li class="slider__item--berries">
+                <!-- <img src="../src/img/menu_slider_item3.jpg" alt="" class="slider__img"> -->
+              </li>
+              <li class="slider__item--salad">
+                <!-- <img src="../src/img/menu_slider_item4.jpg" alt="" class="slider__img"> -->
+              </li>
+            </ul>
           </div>
-          <button class="slider__button--right"></button>
+          <div class="slider__button--right"></div>
           <div class="slider__nav">
-            <div class="slider__nav__item"></div>
-            <div class="slider__nav__item"></div>
-            <div class="slider__nav__item"></div>
-            <div class="slider__nav__item"></div>
+            <div class="slider__nav__item--active"></div>
+            <div class="slider__nav__item--inactive"></div>
+            <div class="slider__nav__item--inactive"></div>
+            <div class="slider__nav__item--inactive"></div>
           </div>
         </div>
       </div>

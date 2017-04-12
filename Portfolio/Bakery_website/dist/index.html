@@ -25,16 +25,19 @@
               <li class="head-nav__list__item">
                 <a href="" class="head-nav__list__link">welcome</a>
               </li>
-              <!-- разделительные знаки с помощью :before -->
+              <li class="head-nav__list__separator">~</li>
               <li class="head-nav__list__item">
                 <a href="" class="head-nav__list__link">menu</a>
               </li>
+              <li class="head-nav__list__separator">~</li>
               <li class="head-nav__list__item">
                 <a href="" class="head-nav__list__link">reservations</a>
               </li>
+              <li class="head-nav__list__separator">~</li>
               <li class="head-nav__list__item">
                 <a href="" class="head-nav__list__link">news</a>
               </li>
+              <li class="head-nav__list__separator">~</li>
               <li class="head-nav__list__item">
                 <a href="" class="head-nav__list__link">contact</a>
               </li>
@@ -65,18 +68,29 @@
                 <span class="about__chef__name">Benito</span>
                 <img class="about__chef__img" src="../src/img/about_avatar.png" alt="chef avatar">
                 <span class="about__chef__name">Gaspare</span>
-                <p class="about__chef__quote">Unique creations for unique occasions.</p>
-                <!-- реализовыать кавычки с помощью :before :after -->
+                <div class="about__chef__quote">
+                  <span class="about__chef__quote__mark--opening">&ldquo;</span>
+                  <p class="about__chef__quote__text">Unique creations for unique occasions.</p>
+                  <span class="about__chef__quote__mark--closening">&rdquo;</span>
+                </div>
               </div>
             </article>
             <div class="about__media">
+              <div class="about__media__sticker"><span class="about__media__sticker__text">tastes so good!</span></div>
               <!-- стикер пустить поверх блоков с картинками -->
-              <div class="about__media__caption">tastes so good!</div>
-              <div class="about__media__item"></div>
+              <div class="about__media__item--top-left">
+                <div class="about__media__item__overlay"></div>
+              </div>
               <!-- бордеры реализовать играясь с видами бордеров и прозрачностью -->
-              <div class="about__media__item"></div>
-              <div class="about__media__item"></div>
-              <div class="about__media__item"></div>
+              <div class="about__media__item--top-right">
+                <div class="about__media__item__overlay"></div>
+              </div>
+              <div class="about__media__item--bottom-left">
+                <div class="about__media__item__overlay"></div>
+              </div>
+              <div class="about__media__item--bottom-right">
+                <div class="about__media__item__overlay"></div>
+              </div>
             </div>
           </div>
         </section>
@@ -88,39 +102,62 @@
                 <li class="prep-time__ready-in">
                   <h6 class="prep-time__ready-in__title">ready in</h6>
                   <span class="prep-time__ready-in__amount">40</span>
-                  <span class="prep-time__ready-in__units">ьmins</span>
+                  <span class="prep-time__ready-in__units">mins</span>
                 </li>
               </ul>
               <div class="menu-preview__item">
                 <!-- элементу menu-preview__item задаем бэкграунд-заливку светлым цветом -->
+                <!-- эффект загнутого уголка делаем через :before c треугольником (треугольник должен бросать такую же тенюху как и основной блок) затираем ненужный угол блока (чтобы он не наплывал на бэкгрунд с фоткой) с помощью clip-path: polygon -->
                 <div class="menu-preview__item__img"></div>
                 <!-- Добавить <button class="menu-preview__item__button"></button> с попомщью :before для сворачивания-разворачивания описания блюда и слайдера -->
                 <div class="menu-preview__item__content">
                   <!-- элементу menu-preview__item__content задаем бэкграундом водяной знак мельницы -->
-                  <h2 class="menu-preview__item__title">tasty pancakes</h2>
+                  <h2 class="menu-preview__item__title">Tasty pancakes</h2>
                   <h3 class="menu-preview__item__title--font">season favourite</h3>
                   <p class="menu-preview__item__text">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
-                  <div class="raiting">
-                    <img src="" alt="" class="raiting__star">
-                    <img src="" alt="" class="raiting__star">
-                    <img src="" alt="" class="raiting__star">
-                    <img src="" alt="" class="raiting__star">
-                    <img src="" alt="" class="raiting__star">
-                  </div>
+                  <!-- рейтинг должен быть реализован с помощью js  и завязан на слайдер и информацию о каждом блюде, хранящуюся в объекте -->
+                  <ul class="raiting">
+                    <li class="raiting__item">
+                      <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+                    </li>
+                    <li class="raiting__item">
+                      <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+                    </li>
+                    <li class="raiting__item">
+                      <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+                    </li>
+                    <li class="raiting__item">
+                      <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+                    </li>
+                    <li class="raiting__item">
+                      <img src="../src/img/raiting_checked.png" alt="" class="raiting__img">
+                    </li>
+                  </ul>
                   <div class="menu-preview__item__slider">
-                    <button class="slider__button--left"></button>
-                    <div class="slider__items-container">
-                      <div class="slider__item"></div>
-                      <div class="slider__item"></div>
-                      <div class="slider__item"></div>
-                      <div class="slider__item"></div>
+                    <div class="slider__button--left"></div>
+                    <!-- вуставить дополнительный блок в случае прокрутки слайдера -->
+                    <div class="slider__container-hider">
+                      <ul class="slider__list">
+                        <li class="slider__item--pancakes">
+                          <!-- <img src="../src/img/menu_slider_item1.jpg" alt="" class="slider__img"> -->
+                        </li>
+                        <li class="slider__item--sandwitch">
+                          <!-- <img src="../src/img/menu_slider_item2.jpg" alt="" class="slider__img"> -->
+                        </li>
+                        <li class="slider__item--berries">
+                          <!-- <img src="../src/img/menu_slider_item3.jpg" alt="" class="slider__img"> -->
+                        </li>
+                        <li class="slider__item--salad">
+                          <!-- <img src="../src/img/menu_slider_item4.jpg" alt="" class="slider__img"> -->
+                        </li>
+                      </ul>
                     </div>
-                    <button class="slider__button--right"></button>
+                    <div class="slider__button--right"></div>
                     <div class="slider__nav">
-                      <div class="slider__nav__item"></div>
-                      <div class="slider__nav__item"></div>
-                      <div class="slider__nav__item"></div>
-                      <div class="slider__nav__item"></div>
+                      <div class="slider__nav__item--active"></div>
+                      <div class="slider__nav__item--inactive"></div>
+                      <div class="slider__nav__item--inactive"></div>
+                      <div class="slider__nav__item--inactive"></div>
                     </div>
                   </div>
                 </div>
@@ -130,30 +167,30 @@
           </div>
           <div class="menu-complete">
             <div class="menu-complete__container">
-              <!-- бэкграундом  menu-complete__container сделать колоски и выставить z-index, чтобы они накладывались поверх всего контента-->
+              <!-- бэкграундом  menu-complete__container сделать колоски, чтобы они накладывались поверх всего контента; сделать так, как на макете не получается, так как этот блок и ограничивает контент создавая поля по бокам-->
               <div class="menu-complete__category">
-                <h2 class="menu-complete__category__title">breakfast</h2>
+                <h2 class="menu-complete__category__title">Breakfast</h2>
                 <h3 class="menu-complete__category__title--font">7am breakfast? we're open!</h3>
                 <div class="menu-complete__category__item">
-                  <h4 class="category__item__title">full breakfast</h4>
+                  <h4 class="category__item__title">Full breakfast</h4>
                   <p class="category__item__text">Duis ut tortor, et risus, vulputate pretium</p>
                   <span class="category__item__price">$12.49</span>
                 </div>
                 <div class="menu-complete__category__item">
-                  <h4 class="category__item__title">toast &#38; Jam</h4>
+                  <h4 class="category__item__title">Toast &#38; Jam</h4>
                   <p class="category__item__text"> Suspendisse, tempus, nterdum</p>
                   <span class="category__item__price">$4.90</span>
                 </div>
                 <div class="menu-complete__category__item">
-                  <h4 class="category__item__title">muffins</h4>
+                  <h4 class="category__item__title">Muffins</h4>
                   <p class="category__item__text">Fusce eget dui sodales est</p>
                   <span class="category__item__price">$3.95</span>
                 </div>
               </div>
+              <!-- в идеале этот блок должен состоять из троих разных элементов (см. шаблон), которые находяться друг под другом и имеют разные стили (шрифты и контент тот же, но размер, размеры шрифтов и отступы изменены). Додумать смысловую нагрузку и js-анимацию для переключения между этими тремя элементами (при каком действии на какой части элемента происходит замена, как элементы позиционируются и прелистываются) -->
               <div class="menu-complete__category-cover">
-                <div class="menu-complete__category-cover__container">
-                  <div class="menu-complete__category-cover__item">
-                    <!-- попробовать реализовать бордер пунктиром без дополнительных блоковю Если не получится - то моздать блок category-cover__item__content  -->
+                <div class="menu-complete__category-cover__item">
+                  <div class="category-cover__item-container">
                     <div class="category-cover__item__header">
                       <span class="category-cover__item__header__text">est.</span>
                       <span class="category-cover__item__header__text">1893</span>
@@ -161,33 +198,8 @@
                     </div>
                     <h3 class="category-cover__item__title">Your morning Escape with Flair</h3>
                     <p class="category-cover__item__text">Donec vitae sapien ut libero venenatis faucibus.
-          Nullam quis ante. Etiam sit amet orci eget eros
-           faucibus tincidunt. Duis leo.</p>
-                    <a href="" class="category-cover__item__link">read</a>
-                    <!-- в конце каждой обложки подумать как реализовать уголок, чтобы он при этом перекрывал пунктирный бордер -->
-                  </div>
-                  <div class="menu-complete__category-cover__item">
-                    <div class="category-cover__item__header">
-                      <span class="category-cover__item__header__text">est.</span>
-                      <span class="category-cover__item__header__text">1893</span>
-                      <div class="category-cover__item__header__img"></div>
-                    </div>
-                    <h3 class="category-cover__item__title">Your morning Escape with Flair</h3>
-                    <p class="category-cover__item__text">Donec vitae sapien ut libero venenatis faucibus.
-          Nullam quis ante. Etiam sit amet orci eget eros
-           faucibus tincidunt. Duis leo.</p>
-                    <a href="" class="category-cover__item__link">read</a>
-                  </div>
-                  <div class="menu-complete__category-cover__item">
-                    <div class="category-cover__item__header">
-                      <span class="category-cover__item__header__text">est.</span>
-                      <span class="category-cover__item__header__text">1893</span>
-                      <div class="category-cover__item__header__img"></div>
-                    </div>
-                    <h3 class="category-cover__item__title">Your morning Escape with Flair</h3>
-                    <p class="category-cover__item__text">Donec vitae sapien ut libero venenatis faucibus.
-          Nullam quis ante. Etiam sit amet orci eget eros
-           faucibus tincidunt. Duis leo.</p>
+            Nullam quis ante. Etiam sit amet orci eget eros
+             faucibus tincidunt. Duis leo.</p>
                     <a href="" class="category-cover__item__link">read</a>
                   </div>
                 </div>
@@ -197,22 +209,23 @@
           <div class="special">
             <div class="special__header">
               <h1 class="special__title">the Jibarito sandwich</h1>
-              <h2 class="special__title--font">the best sandwich you've ever tasted!</h2>
+              <h2 class="special__title--font">The best sandwich you've ever tasted!</h2>
             </div>
             <div class="special__ingredients">
               <ul class="special__ingredients__list">
-                <li class="special__ingredients__item">
+                <!-- картинка каждого из ингредиентов должна грузиться по ссылке из объекта соответсвующего ингредиента по средствам js -->
+                <li class="special__ingredients__item1">
                   <div class="ingredients__img"></div>
                   <!-- каждой картинке подрисовать тень! -->
-                  <h4 class="ingredients__title">class aptent</h4>
+                  <h4 class="ingredients__title">Class aptent</h4>
                   <p class="ingredients__text">Quot alienum persecuti ut eam, nam ad  atqui primis nusquam.</p>
                 </li>
-                <li class="special__ingredients__item">
+                <li class="special__ingredients__item2">
                   <div class="ingredients__img"></div>
                   <h4 class="ingredients__title">Nulla eget</h4>
                   <p class="ingredients__text">Nullam dictum felis eu pede mollis  pretium Integer tincidunt.</p>
                 </li>
-                <li class="special__ingredients__item">
+                <li class="special__ingredients__item3">
                   <div class="ingredients__img"></div>
                   <h4 class="ingredients__title">Sed nibh purus</h4>
                   <p class="ingredients__text"> Aenean eleifend tellus leo ligula,  porttitor eu, consequat vitae.</p>
@@ -221,8 +234,8 @@
             </div>
             <div class="special__recipe">
               <!-- тень должен откидывать каждый из- троих основных элементов этого блока -->
-              <a href="" class="special__recipe__link">full recipe</a>
               <div class="special__recipe__img"></div>
+              <a href="" class="special__recipe__link">full recipe</a>
               <ul class="prep-time">
                 <li class="prep-time__prep">
                   <h6 class="prep-time__prep__title">prep</h6>
