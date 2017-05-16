@@ -1,25 +1,94 @@
+ .clearfix::after {
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+ }
+
 header, main {
   width: 780px;
   margin: 0 auto;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  padding: 38px 64px 0;
+  padding: 38px 0 0;
 }
 
-header {
-  border-bottom: 1px solid #dedede;
+p {
+  font-size: 12px;
+}
+
+a {
+  font-size:  12px;
+  color: #88b6de;
 }
 
 h1, h3, .stripe {
   color: #6ba850;
 }
 
+.header-box {
+  margin: 0 auto;
+  width: 650px;
+  border-bottom: 1px solid #dedede;
+}
+ .name {
+   width: 445px;
+   float: left;
+ }
+
+.name-box {
+  display: inline-block;
+}
+
 h1 {
-  font-size: 30px;
-  font-weight: bold;
+  width: 209px;
+  padding-bottom: 21px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 h2 {
+  width: 172px;
+  padding-bottom: 33px;
   color: #474747;
-  font-size: 24px;
+  font-size: 14px;
+}
+
+.photo {
+  display: inline-block;
+  margin: 0 0 16px 133px;
+  width: 80px;
+  height: 80px;
+  border-radius: 51px;
+  background: url(../img/photo.jpg) center center no-repeat;
+  background-size: cover;
+  border: 5px solid #6ba850;
+  vertical-align: bottom;
+}
+
+.contacts {
+  width: 193px;
+  margin-top:  26px;
+  padding-left: 11px;
+  float: right;
+  border-left:1px solid #dedede;
+  color: #868686;
+}
+
+.skype {
+  color: #88b6de;
+}
+
+.objective, .summary, .english, .techskill, .softskill, .projexampl, .langskill {
+  width: 562px;
+  margin-left: 169px;
+}
+
+.line {
+  width: 224px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #6ba850;
 }
