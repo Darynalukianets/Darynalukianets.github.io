@@ -1,6 +1,7 @@
 body {
   width: 780px;
 }
+
  .clearfix::after {
    content: ".";
    display: block;
