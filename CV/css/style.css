@@ -47,7 +47,6 @@ a {
 }
 
 .fullname {
-  /*width: 209px;*/
   padding-bottom: 21px;
   font-size: 24px;
   font-weight: 600;
@@ -55,7 +54,6 @@ a {
 }
 
 .position {
-  /*width: 172px;*/
   padding-bottom: 33px;
   color: #474747;
   font-size: 14px;
@@ -87,7 +85,6 @@ a {
 }
 
 .objective, .summary, .english, .techskill, .softskill, .projexampl, .langskill {
-  /*width: 562px;*/
   margin-left: 169px;
 }
 
