@@ -27,7 +27,7 @@ a {
   color: #88b6de;
 }
 
-h1, h3, .stripe {
+.fullname, h3, .stripe {
   color: #6ba850;
 }
 
@@ -46,16 +46,16 @@ h1, h3, .stripe {
   width: 212px;
 }
 
-h1 {
-  width: 209px;
+.fullname {
+  /*width: 209px;*/
   padding-bottom: 21px;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 
-h2 {
-  width: 172px;
+.position {
+  /*width: 172px;*/
   padding-bottom: 33px;
   color: #474747;
   font-size: 14px;
@@ -87,7 +87,7 @@ h2 {
 }
 
 .objective, .summary, .english, .techskill, .softskill, .projexampl, .langskill {
-  width: 562px;
+  /*width: 562px;*/
   margin-left: 169px;
 }
 
