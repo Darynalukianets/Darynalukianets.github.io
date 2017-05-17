@@ -110,6 +110,10 @@ li {
   margin-right: 38px;
 }
 
+.objective {
+  margin-top: 20px;
+}
+
 .line {
   width: 268px;
   height: 6px;
@@ -119,6 +123,10 @@ li {
 
 .text {
   line-height: 21px;
+}
+
+.objective > .text, .summary > .text, .softskill > .text {
+  width: 590px;
 }
 
 .skillblock {
@@ -162,7 +170,7 @@ li {
 
 .worktext {
   display: inline-block;
-  width: 580px;
+  width: 590px;
   clear: both;
   margin-left: 25px;
 }
