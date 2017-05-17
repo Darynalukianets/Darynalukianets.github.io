@@ -161,9 +161,10 @@ li {
 }
 
 .worktext {
-  display: block;
-  float: right;
-  width: 610px;
+  display: inline-block;
+  width: 580px;
+  clear: both;
+  margin-left: 25px;
 }
 
 .worktext > .text {
