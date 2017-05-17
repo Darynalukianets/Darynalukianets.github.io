@@ -126,8 +126,8 @@ li {
   line-height: 21px;
 }
 
-.objective > .text, .summary > .text, .softskill > .text {
-  width: 590px;
+.objective > .text, .summary > .text, .softskill > .text, .projexampl > .text {
+  width: 610px;
 }
 
 .skillblock {
