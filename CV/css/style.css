@@ -9,10 +9,13 @@
 
 header, main {
   width: 780px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  padding: 38px 0 0;
+}
+
+section {
+  margin-bottom: 15px;
 }
 
 p {
@@ -22,6 +25,27 @@ p {
 a {
   font-size:  12px;
   color: #88b6de;
+}
+
+h3 {
+  line-height: 25px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 11px 0 6px;
+}
+
+h6 {
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+li {
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .fullname, h3, .stripe {
@@ -83,11 +107,91 @@ a {
 
 .objective, .summary, .english, .techskill, .softskill, .projexampl, .langskill {
   margin-left: 169px;
+  margin-right: 38px;
 }
 
 .line {
-  width: 224px;
+  width: 268px;
   height: 6px;
   border-radius: 5px;
   background-color: #6ba850;
+}
+
+.text {
+  line-height: 21px;
+}
+
+.skillblock {
+  width: 283px;
+  height: 120px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skillblock > .text {
+  padding-right: 13px;
+  line-height: 15px;
+}
+
+.skillblock.last {
+  height: auto;
+}
+
+.skillblock.design {
+  height: 77px;
+}
+
+/*.workexp, .education, .addeducation {
+  width: 650px;
+  margin: 0 auto;
+}*/
+
+.heading {
+  margin-left: 169px;
+}
+
+.icon {
+  display: block;
+  float: left;
+  margin-left: 20px;
+}
+
+.last-icon {
+  margin-top: 27px;
+}
+
+.worktext {
+  display: block;
+  float: right;
+  width: 610px;
+}
+
+.worktext > .text {
+  line-height: 15px;
+}
+
+.stripe {
+  width: 125px;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid #6ba850;
+  text-align: center;
+  position: relative;
+  color: #6ba850;
+}
+
+.stripe:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+  bottom: -10px;
+  border-width: 0 10px 10px 0;
+  border-right-color: #6ba850;
+  left: 0;
+}
+
+.date {
+  text-align: center;
+  font-size: 11px;
 }
