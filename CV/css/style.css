@@ -54,7 +54,8 @@ li {
 
 .header-box {
   margin: 0 auto;
-  width: 650px;
+  /*width: 650px;*/
+  width: 700px;
   border-bottom: 1px solid #dedede;
 }
  .name {
