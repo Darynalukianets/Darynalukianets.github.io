@@ -1,0 +1,217 @@
+
+ .clearfix::after {
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+ }
+
+header, main {
+  width: 780px;
+  margin: 20px auto 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  font-size:  12px;
+  color: #88b6de;
+}
+
+h3 {
+  line-height: 25px;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 11px 0 6px;
+}
+
+h6 {
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+li {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.fullname, h3, .stripe {
+  color: #70bd4d;
+}
+
+.header-box {
+  margin: 0 auto;
+  /*width: 650px;*/
+  width: 700px;
+  border-bottom: 1px solid #dedede;
+}
+ .name {
+   width: 494px;
+   float: left;
+ }
+
+.name-box {
+  display: inline-block;
+  width: 212px;
+}
+
+.fullname {
+  padding-bottom: 21px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.position {
+  padding-bottom: 33px;
+  color: #474747;
+  font-size: 14px;
+}
+
+.photo {
+  display: inline-block;
+  margin: 0 0 16px 178px;
+  width: 80px;
+  height: 80px;
+  border-radius: 51px;
+  background: url(../img/photo.jpg) center center no-repeat;
+  background-size: cover;
+  border: 5px solid #dbded9;
+  vertical-align: bottom;
+}
+
+.contacts {
+  width: 193px;
+  margin-top:  26px;
+  padding-left: 11px;
+  float: right;
+  border-left:1px solid #dedede;
+  color: #868686;
+}
+
+.skype {
+  color: #88b6de;
+}
+
+.objective, .summary, .english, .techskill, .softskill, .projexampl, .langskill {
+  margin-left: 230px;
+  margin-right: 38px;
+}
+
+.objective {
+  margin-top: 20px;
+}
+
+.line {
+  width: 268px;
+  height: 6px;
+  border-radius: 5px;
+  background-color: #70bd4d;
+}
+
+.text {
+  line-height: 21px;
+}
+
+.objective > .text, .summary > .text, .softskill > .text, .projexampl > .text {
+  width: 610px;
+}
+
+.skillblock {
+  width: 283px;
+  /*изменено, чтобы влазил весь текст блока с библиотеками и фреймворками*/
+  height: 135px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.skillblock > .text {
+  padding-right: 13px;
+  line-height: 15px;
+}
+
+.skillblock.last {
+  height: auto;
+}
+
+.skillblock.design {
+  height: 77px;
+}
+
+/*.workexp, .education, .addeducation {
+  width: 650px;
+  margin: 0 auto;
+}*/
+
+.heading {
+  margin-left: 230px;
+}
+
+.icon {
+  display: block;
+  float: left;
+  margin-left: 81px;
+}
+
+/*.last-icon {
+  margin-top: 27px;
+}*/
+
+.worktext {
+  display: inline-block;
+  width: 590px;
+  clear: both;
+  margin-left: 25px;
+}
+
+.worktext > .text {
+  line-height: 15px;
+}
+
+.worktext > h5 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.stripe {
+  width: 125px;
+  height: 30px;
+  margin-top: 10px;
+  border: 1px solid #70bd4d;
+  text-align: center;
+  position: relative;
+  color: #70bd4d;
+}
+
+.stripe:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+  bottom: -10px;
+  border-width: 0 10px 10px 0;
+  border-right-color: #70bd4d;
+  left: 0;
+}
+
+.date {
+  text-align: center;
+  font-size: 11px;
+}
+
+.addeducation {
+  /*margin-top: 100px;*/
+}
