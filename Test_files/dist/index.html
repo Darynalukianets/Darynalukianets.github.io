@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-container">
+      <header>
+        <div class="head">
+          <div class="hd-logo">Gustoso</div>
+          <div class="share-box">
+            <ul class="share">
+              <li class="share_item twitter"><a href="" class="share_link"></a></li>
+              <li class="share_item fb"><a href="" class="share_link"></a></li>
+              <li class="share_item insta"><a href="" class="share_link"></a></li>
+            </ul>
+          </div>
+          <!-- попробовать реализовать горизонтальный и вертикальный вариант менюшки меняя стили css без добавления отдельного блока для мобильной версии  -->
+          <nav class="hd-nav">
+            <ul class="hd-nav_list">
+              <li class="hd-nav_item">
+                <a href="">welcome</a>
+              </li>
+              <li class="hd-nav_separator">~</li>
+              <li class="hd-nav_item">
+                <a href="">menu</a>
+              </li>
+              <li class="hd-nav_separator">~</li>
+              <li class="hd-nav_item">
+                <a href="">reservations</a>
+              </li>
+              <li class="hd-nav_separator">~</li>
+              <li class="hd-nav_item">
+                <a href="">news</a>
+              </li>
+              <li class="hd-nav_separator">~</li>
+              <li class="hd-nav_item">
+                <a href="">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content-wrapper slogan-box">
+          <div class="slogan">
+            <h1 class="slogan_title">Pastry with love</h1>
+            <p class="slogan_text">We're bringing you fresh ingredients every day in ways you can't resist.</p>
+            <!-- текст параграфа отбрасывает минимальную тенюху -->
+          </div>
+          <button class="menu_btn">our menu</button>
+          <!-- попробовать переделать декор с булкой с помощью только одного :after, чтобы не использовать html разметку для стилизации -->
+          <div class="header_border-decor"></div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about">
+          <div class="about_container content-wrapper">
+            <!--класс about_content оставляю для семантичности и на случай, если потребуются дополнительные стили для этого блока-->
+            <article class="about_content col-50-left">
+              <h2 class="about_title section-hd">Art of cakes</h2>
+              <h3 class="about_sub-title section-sub-hd">We create delicious memories</h3>
+              <p class="about_text para-lato">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed.</p>
+              <div class="chef-box">
+                <h4 class="chef_title section-hd">chef cook</h4>
+                <span class="chef_name">Benito</span>
+                <div class="chef_img"></div>
+                <span class="chef_name">Gaspare</span>
+                <div class="quote-box">
+                  <span class="quote-mark quote-open">&ldquo;</span>
+                  <p class="quote_text">Unique creations for unique occasions.</p>
+                  <span class="quote-mark quote-close">&rdquo;</span>
+                </div>
+              </div>
+            </article>
+            <div class="about_media col-50-right">
+              <div class="sticker"><span class="sticker_text">tastes so good!</span></div>
+              <div class="media_item top-left"></div>
+                <div class="media_item top-right"></div>
+                <div class="media_item bottom-left"></div>
+                <div class="media_item bottom-right"></div>
+              </div>
+          </div>
+        </section>
+        <div class="menu">
+          <div class="menu-preview">
+            <div class="menu-preview_container content-wrapper">
+              <ul class="cook-time">
+                <!-- контент этих маленьких повторяющихся блоков можно запилить с помощью шаблона (в т.ч. и информацию о каждом из блюд (поместить в объект все блюда, где в свою очередь блюдо тоже является объектом)) -->
+                <li class="ready-in">
+                  <h6 class="cook-time-hd">ready in</h6>
+                  <span class="ready-in_amount" id="widgetReadyAmount">40</span>
+                  <span class="cook-time-units">mins</span>
+                </li>
+              </ul>
+              <div class="widget-box">
+                <div class="menu-preview_widget">
+                  <!-- эффект загнутого уголка делаем через :before c треугольником (треугольник должен бросать такую же тенюху как и основной блок) затираем ненужный угол блока (чтобы он не наплывал на бэкгрунд с фоткой) с помощью clip-path: polygon -->
+                  <div class="widget_cover" id="cover"></div>
+                  <!-- Добавить <button class="menu-preview__item__button"></button> с попомщью :before для сворачивания-разворачивания описания блюда и слайдера -->
+                  <div class="widget_content" id="widgContent">
+                    <!-- элементу menu-preview__item__content задаем бэкграундом водяной знак мельницы -->
+                    <div class="widget_content-box">
+                      <h2 class="widget-hd section-hd">Tasty pancakes</h2>
+                      <h3 class="widget-sub-hd section-sub-hd">season favourite</h3>
+                      <p class="widget_text para-lato">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus.</p>
+                      <!-- рейтинг должен быть реализован с помощью js  и завязан на слайдер и информацию о каждом блюде, хранящуюся в объекте -->
+                      <!-- переделать стили, чтобы картинки шли бэкграундом а не тегами -->
+                      <ul class="raiting">
+                        <li class="raiting_item" id="checked-star"></li>
+                        <li class="raiting_item" id="checked-star"></li>
+                        <li class="raiting_item" id="checked-star"></li>
+                        <li class="raiting_item" id="checked-star"></li>
+                        <li class="raiting_item" id="unchecked-star"></li>
+                      </ul>
+                    </div>
+                    <div class="widget_slider">
+                      <div class="slider_btn left-btn" id="prev"></div>
+                      <!-- вуставить дополнительный блок в случае прокрутки слайдера -->
+                      <div class="slider_hider" id="slider">
+                        <ul class="slider_list">
+                          <li class="slider_item pancakes" id="pancakes"></li>
+                          <li class="slider_item sandwitch" id="sandwitch"></li>
+                          <li class="slider_item berries" id="berries"></li>
+                          <li class="slider_item salad" id="salad"></li>
+                        </ul>
+                      </div>
+                      <div class="slider_btn right-btn" id="next"></div>
+                      <div class="slider_nav">
+                        <div class="slider_nav_item"></div>
+                        <div class="slider_nav_item inactive"></div>
+                        <div class="slider_nav_item inactive"></div>
+                        <div class="slider_nav_item inactive"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- попробовать здесь внутри реализовать уголок с помощью css -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-category">
+            <div class="menu-category_container content-wrapper">
+              <!-- бэкграундом  menu-complete__container сделать колоски, чтобы они накладывались поверх всего контента; сделать так, как на макете не получается, так как этот блок и ограничивает контент создавая поля по бокам-->
+              <div class="col-50-left">
+                <div class="breakfast">
+                  <h2 class="breakfast_title">Breakfast</h2>
+                  <h3 class="section-sub-hd breakfast-sub-hd">7am breakfast? we're open!</h3>
+                  <div class="breakfast_item">
+                    <h4 class="breakfast_title">Full breakfast</h4>
+                    <p class="para-lato">Duis ut tortor, et risus, vulputate pretium</p>
+                    <span>$12.49</span>
+                  </div>
+                  <div class="breakfast_item">
+                    <h4 class="breakfast_title">Toast &#38; Jam</h4>
+                    <p class="para-lato"> Suspendisse, tempus, nterdum</p>
+                    <span>$4.90</span>
+                  </div>
+                  <div class="breakfast_item">
+                    <h4 class="breakfast_title">Muffins</h4>
+                    <p class="para-lato">Fusce eget dui sodales est</p>
+                    <span>$3.95</span>
+                  </div>
+                </div>
+              </div>
+              <!-- в идеале этот блок должен состоять из троих разных элементов (см. шаблон), которые находяться друг под другом и имеют разные стили (шрифты и контент тот же, но размер, размеры шрифтов и отступы изменены). Додумать смысловую нагрузку и js-анимацию для переключения между этими тремя элементами (при каком действии на какой части элемента происходит замена, как элементы позиционируются и прелистываются) -->
+              <div class="col-50-right">
+                <div class="breakfast-covers_container  clearfix" id="cover-container">
+                  <div class="breakfast-cover_box cover-sizeL" id="front-cover">
+                    <div class="breakfast-cover light">
+                      <div class="cover-hd">
+                        <span>est.</span>
+                        <span>1893</span>
+                        <div class="cover_decor"></div>
+                      </div>
+                      <h3 class="section-hd">Your morning Escape with Flair</h3>
+                      <p class="para-lato">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+                        faucibus tincidunt. Duis leo.</p>
+                      <a href="">read</a>
+                    </div>
+                  </div>
+                  <div class="breakfast-cover_box cover-sizeM">
+                    <div class="breakfast-cover medium">
+                      <div class="cover-hd">
+                        <span>est.</span>
+                        <span>1893</span>
+                        <div class="cover_decor"></div>
+                      </div>
+                      <h3 class="section-hd">Your morning Escape with Flair</h3>
+                      <p class="para-lato">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.</p>
+                      <a href="">read</a>
+                    </div>
+                  </div>
+                  <div class="breakfast-cover_box cover-sizeS">
+                    <div class="breakfast-cover dark">
+                      <div class="cover-hd">
+                        <span>est.</span>
+                        <span>1893</span>
+                        <div class="cover_decor"></div>
+                      </div>
+                      <h3 class="section-hd">Your morning Escape with Flair</h3>
+                      <p class="para-lato">Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+                          faucibus tincidunt. Duis leo.</p>
+                      <a href="">read</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="special content-wrapper">
+            <div class="special_hd">
+              <h1 class="section-hd">The Jibarito sandwich</h1>
+              <h2 class="section-sub-hd">The best sandwich you've ever tasted!</h2>
+            </div>
+            <div class="ingredients-box">
+              <ul class="ingredients">
+                <!-- картинка каждого из ингредиентов должна грузиться по ссылке из объекта соответсвующего ингредиента по средствам js -->
+                <li class="ingredient">
+                  <div class="ingredient_img wheat"></div>
+                  <!-- каждой картинке подрисовать тень! -->
+                  <h4>Class aptent</h4>
+                  <p class="para-lato">Quot alienum persecuti ut eam, nam ad  atqui primis nusquam.</p>
+                </li>
+                <li class="ingredient">
+                  <div class="ingredient_img egg"></div>
+                  <h4>Nulla eget</h4>
+                  <p class="para-lato">Nullam dictum felis eu pede mollis  pretium Integer tincidunt.</p>
+                </li>
+                <li class="ingredient">
+                  <div class="ingredient_img ricotta"></div>
+                  <h4>Sed nibh purus</h4>
+                  <p class="para-lato"> Aenean eleifend tellus leo ligula,  porttitor eu, consequat vitae.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="recipe-preview">
+              <!-- тень должен откидывать каждый из- троих основных элементов этого блока -->
+              <div class="recipe_img"></div>
+                <button class="recipe-btn">full recipe</button>
+              <ul class="cook-time">
+                <li class="prep">
+                  <h6 class="cook-time-hd">prep</h6>
+                  <span class="cook-time-amount">15</span>
+                  <span class="cook-time-units">mins</span>
+                </li>
+                <li class="cook">
+                  <h6 class="cook-time-hd">cook</h6>
+                  <span class="cook-time-amount">35</span>
+                  <span class="cook-time-units">mins</span>
+                </li>
+                <li class="ready-in">
+                  <h6 class="cook-time-hd">ready in</h6>
+                  <span class="ready-in_amount">50</span>
+                  <span class="cook-time-units">mins</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer content-wrapper">
+          <!--под вопросом - будет ли футер и его содержимое всегда такой же ширины как content-wrapper для других блоков. При необходимости - содать еще один блок-->
+        <ul class="ft-nav left">
+          <!-- с помощью :before или :after реализовать расзделительные знаки-->
+          <li class="ft-nav_item"><a href="">our menu</a></li>
+          <li class="ft-nav_separator">~</li>
+          <li class="ft-nav_item"><a href="">gallery</a></li>
+            <li class="ft-nav_separator">~</li>
+          <li class="ft-nav_item"><a href="">culture</a></li>
+      
+          <!--если item в футере будет иметь только свойство display - сделать общий класс nav)_item и использовать его в обоих местах-->
+        </ul>
+        <div class="ft-logo">Gustoso</div>
+        <ul class="ft-nav right">
+          <!--если item в футере будет иметь только свойство display - сделать общий класс nav)_item и использовать его в обоих местах-->
+          <li class="ft-nav_item"><a href="">events</a></li>
+          <li class="ft-nav_separator">~</li>
+          <li class="ft-nav_item"><a href="">catering</a></li>
+          <li class="ft-nav_separator">~</li>
+          <li class="ft-nav_item"><a href="">visit us</a></li>
+        </ul>
+      </footer>
+  </div>
+  <script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>
