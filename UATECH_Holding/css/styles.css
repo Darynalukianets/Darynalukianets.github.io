@@ -50,7 +50,7 @@ main {
     margin: 0 auto;
     padding-top: 20px;
     font-size: 1.5em;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     letter-spacing: 1.1px;
     line-height: 34px;
 }
@@ -58,14 +58,14 @@ main {
 h2 {
     text-transform: uppercase;
     font-size: 2.55em;
-    font-family: "SFUIDisplay", "Helvetica", sans-serif;
+    font-family: "Helvetica", "SFUIDisplay", sans-serif;
     letter-spacing: -1px;
     text-align: center;
 }
 
 h3 {
     font-size: 1.65em;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     color: #253137;
@@ -73,7 +73,7 @@ h3 {
 
 h4 {
     font-size: 0.85em;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
     color: #7c8387;
     letter-spacing: 1px;
@@ -110,7 +110,7 @@ section {
 
 .statistics_text {
     margin-top: 9px;
-    font-family: "SFUIDisplay", "Helvetica", sans-serif;
+    font-family: "Helvetica", "SFUIDisplay", sans-serif;
     font-size: 1em;
     font-weight: 300;
     line-height: 31px;
@@ -140,7 +140,7 @@ section {
 .business_text, .investments_item > p, .social_item > p, .popup p {
     padding-top: 10px;
     font-size: 1em;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
     line-height: 30px;
 }
@@ -151,7 +151,7 @@ section {
 
 .business_link {
     margin: 40px auto;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     color: #ffab00;
@@ -168,7 +168,7 @@ section {
 
 .investments_text {
     margin-top: 10px;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
     font-size: 1.1em;
     letter-spacing: 1.3px;
@@ -240,7 +240,7 @@ section {
     background-color: #ffab00;
     border-radius: 3px;
     color: #fff;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
     font-size: 1.5em;
     letter-spacing: 1.3px;
@@ -325,7 +325,7 @@ section {
 .form_container {
     padding-left: 10%;
     font-size: 0.9em;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
 }
 
@@ -335,7 +335,7 @@ input, textarea {
     border: 1px solid #fff;
     padding-left: 33px;
     font-size: 0.9em;
-    font-family: "SFUIDisplay", "Helvetica Neue Thin", sans-serif;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
     font-weight: 600;
     color: #858b8f;
 }
@@ -591,10 +591,3 @@ footer {
         height: 90px;
     }
 }
-
-
-
-
-
-
-
