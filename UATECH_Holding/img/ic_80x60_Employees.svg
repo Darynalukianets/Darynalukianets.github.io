@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="80px" height="60px" viewBox="0 0 80 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_80x60_Employees</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="60" height="42" rx="2"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="60" height="42" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="60" height="42" rx="2"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="60" height="42" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="60" height="42" rx="2"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="60" height="42" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="FIN" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Main_UAHolding_v01" transform="translate(-870.000000, -520.000000)">
+            <g id="02" transform="translate(120.000000, 519.000000)">
+                <g id="ic_80x60_Employees" transform="translate(750.000000, 1.000000)">
+                    <g id="Card-Copy-2" transform="translate(20.000000, 0.000000)" stroke="#546E7A">
+                        <g id="Free-57-26-web-seo-internet-profle-Copy-6" stroke-width="2" fill="#FFFFFF">
+                            <use id="Layer-1" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M35,14.5 L53.0322266,14.5" id="Layer-2"></path>
+                        <path d="M35,20.5 L53.0322266,20.5" id="Layer-3"></path>
+                        <path d="M35,26.5 L46.2701416,26.5" id="Layer-4"></path>
+                    </g>
+                    <g id="Card-Copy" transform="translate(10.000000, 9.000000)" stroke="#546E7A">
+                        <g id="Free-57-26-web-seo-internet-profle-Copy-7" stroke-width="2" fill="#FFFFFF">
+                            <use id="Layer-1" mask="url(#mask-4)" xlink:href="#path-3"></use>
+                        </g>
+                        <path d="M35,14.5 L53.0322266,14.5" id="Layer-2"></path>
+                        <path d="M35,20.5 L53.0322266,20.5" id="Layer-3"></path>
+                        <path d="M35,26.5 L46.2701416,26.5" id="Layer-4"></path>
+                    </g>
+                    <g id="Card" transform="translate(0.000000, 18.000000)">
+                        <g id="Free-57-26-web-seo-internet-profle-Copy-8">
+                            <use id="Layer-1" stroke="#546E7A" mask="url(#mask-6)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-5"></use>
+                            <path d="M12.3968805,16.322641 C12.1758845,16.4633511 11.759559,17.3465446 11.9479088,18.1214483 C12.2280206,19.2738771 13.224371,19.7236557 13.224371,19.7236557 C13.224371,19.7236557 14.7831075,21.8517271 14.7831075,23.0893177 C14.7831075,24.3269082 14.7831075,24.8077168 14.36539,25.8401865 C13.9476724,26.8726562 5.74810065,28.1103101 5.4,34.1970282 L17.3344846,34.1970282 L29.4,34.1983573 C29.0518993,28.1116392 20.8523276,26.8739854 20.43461,25.8415156 C20.0168925,24.8090459 20.0168925,24.3282374 20.0168925,23.0906468 C20.0168925,21.8530563 21.575629,19.7249849 21.575629,19.7249849 C21.575629,19.7249849 22.5719794,19.2752062 22.8520912,18.1227774 C23.040441,17.3478738 22.6241155,16.4646803 22.4031195,16.3239701 C22.993845,14.4602173 24.1736507,8.03497495 17.4655154,7.80339694 C17.4356968,7.79901883 17.4060322,7.79980035 17.3765192,7.80070102 C10.6263493,8.03364583 11.806155,14.4588882 12.3968805,16.322641 Z" id="Layer-5" stroke="#FFAB00"></path>
+                        </g>
+                        <path d="M35,14.5 L53.0322266,14.5" id="Layer-2" stroke="#546E7A"></path>
+                        <path d="M35,20.5 L53.0322266,20.5" id="Layer-3" stroke="#546E7A"></path>
+                        <path d="M35,26.5 L46.2701416,26.5" id="Layer-4" stroke="#546E7A"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
