@@ -114,10 +114,12 @@ section {
     font-size: 1em;
     font-weight: 300;
     line-height: 31px;
+    color: #253237;
 }
 
 .statistics_text > span {
     font-weight: 600;
+    color: #253237;
 }
 
 .business {
@@ -135,6 +137,39 @@ section {
 .business_item > h3 {
     line-height: 37px;
     margin-top: 12px;
+}
+
+.business_text {
+    padding-top: 10px;
+    font-size: 1em;
+    font-family: "Helvetica Neue Thin", "SFUIDisplay", sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    color: transparent;
+    -webkit-text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -moz-text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+}
+
+.business_text > span {
+    -webkit-text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -moz-text-shadow: 0 0 5px rgba(0,0,0,0.3);
+    text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.business_text:first-line {
+    color: #253237;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+
+.business_text:hover {
+    color: #253237;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
 }
 
 .business_text, .investments_item > p, .social_item > p, .popup p {
