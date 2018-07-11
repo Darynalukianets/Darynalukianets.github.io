@@ -66,7 +66,7 @@ var histList = {
             if (i <= 7) {
                 afterList.push(histListValuesArr[i]);
             } else {
-            //т.е. если i= 8 и больше --> определить насколько оно меньше 6ти и подсчиатть правильную порзицию с начала
+
                 afterList.push(histListValuesArr[i - histListValuesArr.length]);
             }
         }
@@ -89,7 +89,6 @@ var histList = {
                 newDatesList[i] = prevList[i - 4];
             }
         })();
-        console.log(newDatesList);
 
         //добавить класс запускающий анимацию смены точки с маленькой на большую
         $(this).find('.hist__item__dot').fadeOut('fast', function() {
@@ -111,14 +110,12 @@ var histList = {
                                 $('.slider__card__year, .slider__card__descr').fadeOut('fast', function() {
                                     //присваиваем в карточку новые значения
                                     $('.slider__card__year').html(histList[chosenItem].date);
-                                    // console.log()
                                     $('.slider__card__descr').html(histList[chosenItem].text);
                                     //постепенно показываем карточку
                                     $('.slider__card__year, .slider__card__descr').fadeIn('slow', function() {
                                         //запускаем функцию расстановки дат по новым местам: сначала присваивается айдишник центральной точке, потом - вытягивая последовательность из объекта - айдишник и год каждой из точек
                                         $('.centered').attr('id', chosenItem);
                                         // $('.centered').prev().attr('id', );
-                                        console.log($('.hist__item').toArray());
                                        $('.hist__item').toArray().forEach(function(currval, i, arr) {
                                            arr[i].id = newDatesList[i].id;
                                            arr[i].children[1].innerText = newDatesList[i].date;
@@ -139,7 +136,6 @@ var histList = {
 
 (function() {
     var scrollLeft = (115 * ((($('.slider__item--mob').length) / 2) - 2) ) + (2 * 57) - ($(window).width() / 2) + 50;
-    console.log(scrollLeft);
     $('.slider__list--mob').scrollLeft(scrollLeft);
 
     $('.slider__item--mob').click(function() {
@@ -150,12 +146,7 @@ var histList = {
         var histListArr = Object.keys(histList);
 
         histListArr.forEach(function(currval, i, arr) {
-            // console.log(i);
-            // console.log(currval);
-            // console.log(neYearId);
             if (currval === neYearId){
-               console.log(i);
-                console.log(Object.values(histList)[i].date);
                 $('.slider__card--mob').fadeOut('fast', function() {
                     $('.slider__card__year--mob').html( Object.values(histList)[i].date);
                     $('.slider__card__descr--mob').html( Object.values(histList)[i].text);

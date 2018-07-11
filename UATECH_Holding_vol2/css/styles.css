@@ -240,6 +240,10 @@
    display: none;
 }
  /*end history block*/
+.news__item figure, .news-preview__item figure, .other__item figure {
+    background: #ebebeb;
+}
+
 body {
     font-size: 100%;
 }
@@ -1311,6 +1315,7 @@ article p {
         margin: 14px auto 65px;
         font-size: 40px;
         line-height: 50px;
+        text-align: center;
     }
 
     .other__container {
