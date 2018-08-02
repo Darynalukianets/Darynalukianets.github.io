@@ -383,6 +383,10 @@ video {
     right: 20px;
 }
 
+.popup__close--video:focus {
+    outline: none;
+}
+
 .popup__close:hover, .popup__close--video:hover {
     opacity: 1;
 }
@@ -444,6 +448,10 @@ header, footer, .main--news, .main--article, .other {
     border: 2px solid #fff;
     background: transparent;
     border-radius: 50%;
+}
+
+.header__btn:focus {
+   outline: none;
 }
 
 .play {
