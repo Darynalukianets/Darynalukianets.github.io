@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>UATECH holding</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -17,19 +18,24 @@
 		<a href="index.html" class="home__link">
 			<img src="img/logo-UATECH-Holding_W.png" alt="" class="logo__img">
 		</a>
-		<a href="" class="header__contact-link">Contact us</a>
 	</header>
 </div>
 <div class="main__container">
 	<main class="main--article">
 		<article>
+			<a href="news.html" class="atricle__link--tonews"><span><i class="fas fa-arrow-left"></i></span>Back to the main page </a>
 			<div class="article__cover">
 				<img src="img/news1.jpg" alt="">
 			</div>
 			<div class="article__data">
-				<span class="article__date">26 May 2018</span>
-				<span class="article__size">8 minutes read</span>
 				<h1 class="article__header">How we create the best social project in Ukraine</h1>
+				<div class="article__data__details">
+					<div>
+						<span class="article__date"><span><i class="far fa-calendar-alt"></i></span>26 May 2018</span>
+						<span class="article__size"><span><i class="far fa-clock"></i></span>8 minutes read</span>
+					</div>
+					<div class="article__author">Author: <span>Natalia Tereschenko</span></div>
+				</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid amet beatae eveniet hic, in, magnam minima, placeat quod repellendus unde! Alias cum, iure mollitia optio quas repellat velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid amet beatae eveniet hic, in, magnam minima, placeat quod repellendus unde! Alias cum, iure mollitia optio quas repellat velit!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid amet beatae eveniet hic, in, magnam minima, placeat quod repellendus unde! Alias cum, iure mollitia optio quas repellat velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid amet beatae eveniet hic, in, magnam minima, placeat quod repellendus unde! Alias cum, iure mollitia optio quas repellat velit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid amet beatae eveniet hic, in, magnam minima, placeat quod repellendus unde! Alias cum, iure mollitia optio quas repellat velit!</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquid amet beatae eveniet hic, in, magnam minima, placeat quod repellendus unde! Alias cum, iure mollitia optio quas repellat velit!</p>
@@ -37,6 +43,9 @@
 			</div>
 		</article>
 	</main>
+</div>
+<div class="socialmedia__container">
+	<a href="https://www.facebook.com/uatechholding" class="socialmedia" target="_blank"><img src="img/facebook-logo-button.svg" alt=""><span>Follow us on Facebook!</span></a>
 </div>
 <div class="other__container">
 	<div class="other">
@@ -81,27 +90,9 @@
 		</ul>
 	</div>
 </div>
-<div class="footer-container">
+<div class="footer-container footer-container--article">
 	<footer>
-		<div class="contact">
-			<div class="contact__map">
-				<ul class="contact__map__list">
-					<li class="contact__map__item"></li>
-					<li class="contact__map__item"></li>
-					<li class="contact__map__item"></li>
-					<li class="contact__map__item"></li>
-					<li class="contact__map__item"></li>
-				</ul>
-			</div>
-			<div class="contact__form-container"><h3 class="contact__header">contact us</h3>
-				<form action="#" id="contact" method="post" class="contact__form">
-					<input type="text" id="name" name="name" required="required" value="" placeholder="Name" minlength="3" maxlength="30">
-					<input type="email" placeholder="Email" id="email" name="mail"  required="required" value="" maxlength="30" pattern=" /^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$/">
-					<textarea name="text" id=message"" cols="30" rows="10" placeholder="Type your message" required="required" minlength="10" maxlength="500"></textarea>
-					<button>Send</button>
-				</form>
-			</div>
-		</div>
+		<div class="footer--article__text">Copyright &copy; Adviser.team</div>
 	</footer>
 </div>
 <script src="js/common.js"></script>
