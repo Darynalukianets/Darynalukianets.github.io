@@ -448,6 +448,11 @@ header, footer, .main--news, .main--article, .other {
     border: 2px solid #fff;
     background: transparent;
     border-radius: 50%;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__btn:focus {
@@ -835,8 +840,8 @@ section {
 .footer-container {
     height: 523px;
     padding: 50px 0;
-    background: url("../img/map.png") #464646 no-repeat -400px;
-    background-size: cover;
+    background: url("../img/map.png") #282828 no-repeat -331px 165px;
+    background-size: 1653px;
 }
 
 .footer-container.footer-container--article {
@@ -1089,6 +1094,7 @@ article p {
     .header__btn {
         width: 90px;
         height: 90px;
+        font-size: 25px;
     }
 
     h2 {

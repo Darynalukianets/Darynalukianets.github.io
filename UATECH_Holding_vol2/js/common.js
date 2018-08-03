@@ -1,7 +1,9 @@
 (function() {
     $('.contact-link__header, .header__contact-link').click(function(e) {
         e.preventDefault();
-        window.scrollBy(0, window.innerHeight);
+        // window.scrollBy(0, window.innerHeight);
+        var scrollBottom = $(window).scrollTop() + $(window).height();
+        $(window).scrollTop(scrollBottom);
         $('.contact__form input:first').focus();
     });
 
